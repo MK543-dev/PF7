@@ -9449,7 +9449,7 @@ maximum_digit(0,num)#num=123
 4. program to combine the two lists into single list without duplicates 
 
 ---
-
+```python
 ## using recursion, without any built-in function:
 
 l1=[1,2,3,4,5] 
@@ -9470,7 +9470,7 @@ length1=length2=0
 for _ in l1:length1+=1 
 for _ in l2:length2+=1
 merge_list(0,length2+length1,l1+l2,[])
-
+```
 
 ---
 
@@ -9487,7 +9487,6 @@ def maximum_element(index,total,mylist,result):
        maximum_element(index+1,total,mylist,result)
     else:
         print(result)
-
 l1=[1,2,2,3,3,4,5] 
 l2=[3,4,5,6,7,8] 
 length1=length2=0
@@ -9497,6 +9496,7 @@ maximum=l1+l2
 maximum=maximum[0]
 maximum_element(0,length2+length1,l1+l2,maximum)
 ```
+
 
 6. write a python program to print the following pattern without loops, 
 
