@@ -9630,29 +9630,31 @@ when we are working with recursive function , we will never use any looping stat
 
 ---
 
-## programs with recursion:
+# programs with recursion:
 
 
 ---
 
 ## 1) print the numbers 1 to n using recursion:
-
+```
 n=10 
-
 1 2 3 4 5 6 7 8 10 
-
+```
 code: 
-def display(start,n):
+```python
+ def display(start,n):
     if start<=n:
         print(start)
         display(start+1,n)
 n=int(input("n:"))
 display(1,n)
+```
 
-2. print the remove the all vowels of the string using recursion 
+## 2. print the remove the all vowels of the string using recursion 
+```
 input: abcder 
 output:  bcdr 
-
+```
 ```python
 def vowels_remove(index,length):
     if index<length: 
@@ -9684,12 +9686,8 @@ num=int(input("number:"))
 maximum_digit(0,num)#num=123
 ```
 
-4. program to combine the two lists into single list without duplicates 
-
----
-
-## using recursion, without any built-in function:
-
+## 4. program to combine the two lists into single list without duplicates using recursion, without any built-in function:
+```python
 l1=[1,2,3,4,5] 
 l2=[3,4,5,6,7,8] 
 result=[1,2,3,4,5,6,7,8] 
@@ -9708,9 +9706,7 @@ length1=length2=0
 for _ in l1:length1+=1 
 for _ in l2:length2+=1
 merge_list(0,length2+length1,l1+l2,[])
-
-
----
+```
 
 ## 5. write a python program to find the  common maximum element of the given two lists using recursion  without using any built-in function:
 
@@ -9736,17 +9732,15 @@ maximum=maximum[0]
 maximum_element(0,length2+length1,l1+l2,maximum)
 ```
 
-6. write a python program to print the following pattern without loops, 
+## 6. write a python program to print the following pattern without loops, with using recursion, without any built-in function:
 
----
-
-## with using recursion, without any built-in function:
-
+```
 1
 1 2
 1 2 3 
 1 2 3 4
-1 2 3 4 5 
+1 2 3 4 5
+ ```
 
 ```python
 def pattern(rownum,rows):
@@ -9761,17 +9755,19 @@ def pattern(rownum,rows):
 
 rows=int(input("Rows:"))
 pattern(1,rows)
+```
 
-7.write a python program to print the following pattern without loops, 
-with using recursion, without any built-in function:
-=========================================================
+## 7.write a python program to print the following pattern without loops, with using recursion, without any built-in function:
+```
 1 2 3 4 5
 1 2 3 4
 1 2 3 
 1 2
 1
+```
 code:
 =====
+```python
 def pattern(rownum,rows):
     def row(colnum,data,cpr):
         if colnum<=cpr: 
@@ -9786,17 +9782,14 @@ rows=int(input("Rows:"))
 pattern(1,rows)
 ```
 
-8. write a python program to print the following pattern without loops, 
-
----
-
-## with using recursion, without any built-in function:
-
+## 8. write a python program to print the following pattern without loops, with using recursion, without any built-in function:
+```
 *
 * *
 * * *
 * * * * 
 * * * * *
+```
 
 ```python
 def pattern(rownum,rows):
@@ -9808,8 +9801,6 @@ rows=int(input("Rows:"))
 pattern(1,rows)
 ```
 
-
----
 
 ## 9. find the factorial of the given number using recursion:
 
@@ -9823,10 +9814,10 @@ num=int(input("num:"))
 print(factorial(num))
 ```
 
-10.  print the fibnocii series for the given n, where n refers number of fibnocii values need to print in the result using recursion, without using looping statements:
-n=10 
+## 10.  print the fibnocii series for the given n, where n refers number of fibnocii values need to print in the result using recursion, without using looping statements:#
+```n=10 
 0 1 1 2 3 5 8 13 21 34
-
+```
 ```python
 def fibnocii(a,b,n):
     #a=5,b=8,n=0
@@ -9838,15 +9829,11 @@ n=int(input("n:"))#5
 fibnocii(0, 1, n)
 ```
 
-11. print  the prime numbers for the given range using recursion, without 
-
----
-
-## using built-in functions and looping statements:
-
-start:1 
+## 11. print  the prime numbers for the given range using recursion, without using built-in functions and looping statements:
+``start:1 
 end: 20 
 2 3 5 7 11 13 17 19
+``
 
 
 ```python
@@ -9868,9 +9855,10 @@ end=int(input("end:"))
 prime(start,end)
 ```
 ## 12. Decimal to Binary using Recursion
-
+```
 **Input:** `120`
 **Output:** `1111000`
+```
 
 ```python
 number = int(input("number:"))
@@ -9886,13 +9874,11 @@ def decimal_to_binary(num, res):
 decimal_to_binary(number, '')
 ```
 
----
-
 ## 13. Number to Words using Recursion
-
+```
 **Input:** `1234` → **Output:** `One Two Three Four`
 **Input:** `-100` → **Output:** `One Zero Zero`
-
+```
 ```python
 number = int(input("number:"))
 
