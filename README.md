@@ -9397,6 +9397,224 @@ when we are working with recursive function , we will never use any looping stat
 
 ---
 
+
+## 12.write a python program to convert the given decimal number into 
+binary using recursion, without using any looping statement:
+========================================================
+input: 120 
+output: 1111000
+
+code:
+```
+number=int(input("number:"))
+def decimal_to_binary(num,res): 
+ if num!=0: 
+ res=res+f'{num%2}'
+ num//=2 
+ decimal_to_binary(num, res)
+ else:
+ print(res[::-1])
+decimal_to_binary(number,'')
+```
+
+13. write a python program using recursion for the following , without 
+using any looping statement and built-in function:
+=========================================================
+input: 1234 
+output: One Two Three Four 
+input: -100 
+output: One Zero Zero
+
+code:
+```
+number=int(input("number:"))
+words=["zero","one",'two','three','four',"five",'six',
+ "seven","eight","nine"]
+def number_to_text(num,res):
+ #num=1 res=one two three 
+ if num!=0: 
+ res=words[num%10]+" "+res
+ number_to_text(num//10, res)
+ else:
+ print(res)
+ 
+number_to_text(number,'')
+```
+
+14 write a python program find the 2nd maximum digit in the given number using recursion , without using looping statement and built-in 
+function:
+========================================================
+input: 128993 
+output: 8
+
+code:
+```
+number=int(input("number:"))
+def second_maximum(num,first_max,second_max):
+ #num=0 first_max=9 second_max=8
+ if num!=0: 
+ if first_max<num%10: 
+ second_max=first_max
+ first_max=num%10
+ elif second_max<num%10 and num%10<first_max:
+ second_max=num%10
+ second_maximum(num//10,first_max,second_max)
+ else:
+ if second_max!=0:
+ print(second_max)
+ else: 
+ if {*f'{number}'}=={*f'{number%10}'}:
+ print(number%10)
+ else: 
+ print(0)
+ 
+second_maximum(number,0,1)
+```
+
+
+15. write a python program print the words of the string using recursion,
+without using built-in function and looping statements:
+=======================================================
+input: "am i learning python really" 
+output: 
+am 
+i 
+learning 
+python 
+really 
+
+code:
+```
+def words(str1,res): 
+ if str1!='': 
+ char=str1[0]
+ if char!=" ": 
+ words(str1[1:],res+char)
+ elif char==" " and res=='': 
+ words(str1[1:], '')
+ else: 
+ print(res)
+ words(str1[1:], '')
+ else:
+ print(res)
+string=input("string:")
+words(string,'')
+```
+
+17. write a python program print the all characters of the string in the 
+ascending order without using any built-in function and any sorting method, write the code using recursion, where function never contain
+any looping statements: 
+input: dabc 
+output: abcd 
+input: a1dcb 
+output: a1bcd 
+code:
+```
+upper="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+lower="abcdefghijklmnopqrstuvwxyz"
+digits="0123456789"
+def sort_characters(str1): 
+ if str1!='':
+ if str1[0] in string:
+ print(str1[0],end="")
+ sort_characters(str1[1:])
+ 
+string=input("string:")
+sort_characters(upper+lower+digits)
+```
+
+in python, when we create the function , we can able to change the function code or enhance the function code without changing the code 
+directly , to change or enhance any function code in python, we will use
+the following ways: 
+=======================================================
+1) monkey patching 
+2) decorators 
+monkey patching
+==============
+when we want to change the any function code without changing the 
+function code directly, in python we will use "monkey patching"
+in monkey patching , we can change the function code as like how we 
+change the value of variable 
+how to perform monkey patching in Python:
+========================================
+syntax: 
+function_name=new_function_name 
+when we apply the monkey patching on any function , after monkey patching the complete code of the function will changes, it means original
+function code will replace completely by new function 
+example:
+```
+def display():
+ print("this is display function")
+def add(a,b):
+ print(a)
+ print(b)
+ print(f"add:{a+b}")
+def sub(a,b):
+ print(a)
+ print(b)
+ print(f"sub:{a-b}")
+display()
+#monkey patching 
+display=add 
+display(10,20) 
+#monkey patching 
+display=sub 
+display(10,20) 
+```
+ 
+decorators:
+=========
+decorator is a higher order function , which takes another function as 
+argument and which function it takes as argument, it will enhances and
+return enhanced function as a result, original function code always
+unchanged 
+ as argument returns
+function===========> decorator ====> enhanced function as result 
+
+if we say any function is higher order function , then the function always takes another function as argument 
+
+when we are working with decorators we will use the following terminology:
+=======================================================
+1) wrapped function 
+ the function which is given as argument to the decorator, 
+ for enhancement, is called as "Wrapped function" 
+2) wrapper function
+ the function which is present inside the decorator and which is used 
+ to enhance the wrapped function 
+
+wrapped function==> decorator(wrapper) ==> enhanced function as result 
+
+when we are working with decorators, we will use the following steps:
+=====================================================
+step-1: 
+create the wrapped function with some name 
+
+step-2: 
+create the decorator with some name
+
+step-3: 
+create the wrapper function inside the decorator as inner function 
+
+step-4: 
+ return the wrapper as a result of the decorator 
+
+when we want to give the any decorator to the any function (wrapped 
+function), in python we will use a symbol called "@" symbol , when 
+we want to decorator using "@", we will use the following syntax: 
+@decorator_name
+def wrapped_function_name(arg1, arg2,arg3,..............argn): 
+ #write the logic here 
+
+for a one function (wrapped function), we can able to give any number of 
+decorators, when we give the "two or more decorators" at a time to 
+a function, then we will say it as "chain of decorators" 
+
+when we give the "chain of decorators(two or more decorators)", then
+all decorators will be called "from bottom to top" order by the wrapped.
+function.
+
+
+
 ## 1) print the numbers 1 to n using recursion:
 
 n=10 
