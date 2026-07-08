@@ -9649,3 +9649,231 @@ prime(start,end)
 ---
 
 ## AI/ML:
+
+
+---
+
+## 12. Decimal to Binary using Recursion
+
+**Input:** `120`
+**Output:** `1111000`
+
+```python
+number = int(input("number:"))
+
+def decimal_to_binary(num, res):
+    if num != 0:
+        res = res + f'{num % 2}'
+        num //= 2
+        decimal_to_binary(num, res)
+    else:
+        print(res[::-1])
+
+decimal_to_binary(number, '')
+```
+
+---
+
+## 13. Number to Words using Recursion
+
+**Input:** `1234` → **Output:** `One Two Three Four`
+**Input:** `-100` → **Output:** `One Zero Zero`
+
+```python
+number = int(input("number:"))
+
+words = ["zero", "one", "two", "three", "four",
+         "five", "six", "seven", "eight", "nine"]
+
+def number_to_text(num, res):
+    if num != 0:
+        res = words[num % 10] + " " + res
+        number_to_text(num // 10, res)
+    else:
+        print(res)
+
+number_to_text(number, '')
+```
+
+---
+
+## 14. 2nd Maximum Digit using Recursion
+
+**Input:** `128993` → **Output:** `8`
+
+```python
+number = int(input("number:"))
+
+def second_maximum(num, first_max, second_max):
+    if num != 0:
+        if first_max < num % 10:
+            second_max = first_max
+            first_max = num % 10
+        elif second_max < num % 10 and num % 10 < first_max:
+            second_max = num % 10
+        second_maximum(num // 10, first_max, second_max)
+    else:
+        if second_max != 0:
+            print(second_max)
+        else:
+            if {*f'{number}'} == {*f'{number % 10}'}:
+                print(number % 10)
+            else:
+                print(0)
+
+second_maximum(number, 0, 1)
+```
+
+---
+
+## 15. Print Words of a String using Recursion
+
+**Input:** `"am i learning python really"`
+**Output:**
+```
+am
+i
+learning
+python
+really
+```
+
+```python
+def words(str1, res):
+    if str1 != '':
+        char = str1[0]
+        if char != " ":
+            words(str1[1:], res + char)
+        elif char == " " and res == '':
+            words(str1[1:], '')
+        else:
+            print(res)
+            words(str1[1:], '')
+    else:
+        print(res)
+
+string = input("string:")
+words(string, '')
+```
+
+---
+
+## 17. Sort Characters of a String using Recursion
+
+**Input:** `dabc` → **Output:** `abcd`
+**Input:** `a1dcb` → **Output:** `1abcd`
+
+```python
+upper  = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+lower  = "abcdefghijklmnopqrstuvwxyz"
+digits = "0123456789"
+
+def sort_characters(str1):
+    if str1 != '':
+        if str1[0] in string:
+            print(str1[0], end="")
+        sort_characters(str1[1:])
+
+string = input("string:")
+sort_characters(upper + lower + digits)
+```
+
+---
+
+## Enhancing Functions Without Changing Code
+
+in python, when we create a function, we can enhance the function code
+without changing it directly. Two ways to do this:
+
+1. Monkey Patching
+2. Decorators
+
+---
+
+## Monkey Patching
+
+when we want to change any function code without changing the function
+code directly, in python we use **monkey patching**.
+
+in monkey patching, we can change the function code like how we change
+the value of a variable — the original function code is **completely replaced**.
+
+**Syntax:**
+```python
+function_name = new_function_name
+```
+
+```python
+def display():
+    print("this is display function")
+
+def add(a, b):
+    print(a)
+    print(b)
+    print(f"add:{a + b}")
+
+def sub(a, b):
+    print(a)
+    print(b)
+    print(f"sub:{a - b}")
+
+display()
+
+# monkey patching
+display = add
+display(10, 20)
+
+# monkey patching
+display = sub
+display(10, 20)
+```
+
+---
+
+## Decorators
+
+decorator is a **higher order function**, which takes another function as
+argument, enhances it, and returns the enhanced function — original function
+code always remains **unchanged**.
+
+```
+function ══════(as argument)══════> decorator ══════> enhanced function
+```
+
+if any function is a **higher order function**, it always takes another
+function as argument.
+
+### Terminology
+
+1. **Wrapped function** — the function given as argument to the decorator for enhancement
+2. **Wrapper function** — the inner function inside the decorator used to enhance the wrapped function
+
+```
+wrapped function ==> decorator(wrapper) ==> enhanced function as result
+```
+
+### Steps to Create a Decorator
+
+**Step 1:** Create the wrapped function with some name
+
+**Step 2:** Create the decorator with some name
+
+**Step 3:** Create the wrapper function inside the decorator as inner function
+
+**Step 4:** Return the wrapper as result of the decorator
+
+### Applying a Decorator using `@` Symbol
+
+**Syntax:**
+```python
+@decorator_name
+def wrapped_function_name(arg1, arg2, arg3, ...argn):
+    # write the logic here
+```
+
+### Chain of Decorators
+
+for one function (wrapped function), we can give **any number of decorators**.
+
+when two or more decorators are given at a time, it is called **"chain of decorators"** — all decorators are called **from bottom to top** order by the wrapped function.
+
