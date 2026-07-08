@@ -9626,33 +9626,6 @@ start=int(input("start:"))
 end=int(input("end:"))
 prime(start,end)
 ```
-
-
----
-
-## monkey patching
-
-
----
-
-## decorators:
-
-
----
-
-## iterators and generators:
-
-
-13)  Python modules and packages 
-
-
----
-
-## AI/ML:
-
-
----
-
 ## 12. Decimal to Binary using Recursion
 
 **Input:** `120`
