@@ -1,301 +1,41 @@
 # 🐍 Python Full Stack with AI/ML — Complete Notes
 
 > **Course:** Python Full Stack Development with AI/ML  
-> **Topics:** Python Basics · Data Types · Operators · Control Flow · Data Structures · Functions · OOP · Modules
+> **Stack:** HTML · CSS · JS · Bootstrap · React · Python · Flask · Django · MySQL · MongoDB  
+> **Tools:** VS Code · Jupyter · Anaconda · Git
 
 ---
 
 ## 📑 Table of Contents
 
-- [Python Full stack with AI/ML](#python-full-stack-with-aiml)
-- [Python full stack](#python-full-stack)
-- [what is mean by Front-end](#what-is-mean-by-front-end)
-- [we will use the following Tech.](#we-will-use-the-following-tech)
-- [2) CSS](#2-css)
-- [3)  JS](#3-js)
-- [4) Bootstrap](#4-bootstrap)
-- [UI framework( to develop the end-to-end Realtime UI)](#ui-framework-to-develop-the-end-to-end-realtime-ui)
-- [what is mean by back-end](#what-is-mean-by-back-end)
-- [what is mean by database](#what-is-mean-by-database)
-- [what is data?](#what-is-data)
-- [2)  Non-relational Database](#2-non-relational-database)
-- [API Frameworks](#api-frameworks)
-- [applications](#applications)
-- [1. stand-alone application or desktop application](#1-stand-alone-application-or-desktop-application)
-- [2. web application or internet application](#2-web-application-or-internet-application)
-- [3. Enterprise application](#3-enterprise-application)
-- [the major common issues with enterprise application](#the-major-common-issues-with-enterprise-application)
-- [4. Distributed application](#4-distributed-application)
-- [what is python?](#what-is-python)
-- [why python high-level?](#why-python-high-level)
-- [in computers, we  will have following types of languages](#in-computers-we-will-have-following-types-of-languages)
-- [1) high-level language](#1-high-level-language)
-- [2) binary language or machine or low-level](#2-binary-language-or-machine-or-low-level)
-- [why python is strongly typed](#why-python-is-strongly-typed)
-- [why python is dynamic typed?](#why-python-is-dynamic-typed)
-- [why python is object-oriented?](#why-python-is-object-oriented)
-- [follow the following  concepts](#follow-the-following-concepts)
-- [why python?](#why-python)
-- [2) Python is used in the following domains](#2-python-is-used-in-the-following-domains)
-- [hard ware](#hard-ware)
-- [software](#software)
-- [executed in the following steps](#executed-in-the-following-steps)
-- [python is a open source](#python-is-a-open-source)
-- [how to work with python?](#how-to-work-with-python)
-- [the following popular IDLE's](#the-following-popular-idles)
-- [use the following url for download python](#use-the-following-url-for-download-python)
-- [use the following URL to download Anaconda Navigator](#use-the-following-url-to-download-anaconda-navigator)
-- [Python language fundamentals](#python-language-fundamentals)
-- [1)  Python character set](#1-python-character-set)
-- [in python, we will have three types of characters](#in-python-we-will-have-three-types-of-characters)
-- [3)  special characters or symbols](#3-special-characters-or-symbols)
-- [2) Python keywords or reserved words](#2-python-keywords-or-reserved-words)
-- [the following are important keywords of the python language](#the-following-are-important-keywords-of-the-python-language)
-- [, we will use the following python code](#we-will-use-the-following-python-code)
-- [3) Python Comments](#3-python-comments)
-- [in python, we can have two types of comments](#in-python-we-can-have-two-types-of-comments)
-- [2) multi-line comments](#2-multi-line-comments)
-- [4) Python Identifiers](#4-python-identifiers)
-- [following rules](#following-rules)
-- [5) Python Data types](#5-python-data-types)
-- [in python, we will have the following datatypes](#in-python-we-will-have-the-following-datatypes)
-- [1. numeric type](#1-numeric-type)
-- [3) complex numbers](#3-complex-numbers)
-- [4) special numbers](#4-special-numbers)
-- [1) binary number](#1-binary-number)
-- [2) octal number](#2-octal-number)
-- [3) decimal number](#3-decimal-number)
-- [4) hexa-decimal number](#4-hexa-decimal-number)
-- [2.Boolean type](#2boolean-type)
-- [in python, we will have two Boolean values](#in-python-we-will-have-two-boolean-values)
-- [3. text type or character type](#3-text-type-or-character-type)
-- [in python, we will have two types of strings](#in-python-we-will-have-two-types-of-strings)
-- [2)  multi-line string](#2-multi-line-string)
-- [4)  sequence type](#4-sequence-type)
-- [in python, the following are the sequence data types](#in-python-the-following-are-the-sequence-data-types)
-- [in python, sequence types are divided into two types](#in-python-sequence-types-are-divided-into-two-types)
-- [the following are mutable sequence types in Python](#the-following-are-mutable-sequence-types-in-python)
-- [the following are immutable sequence types](#the-following-are-immutable-sequence-types)
-- [list](#list)
-- [in python , list can be created using following ways](#in-python-list-can-be-created-using-following-ways)
-- [in python, list can be](#in-python-list-can-be)
-- [tuple](#tuple)
-- [in python , tuple can be created using following ways](#in-python-tuple-can-be-created-using-following-ways)
-- [in python, tuple can be](#in-python-tuple-can-be)
-- [3.string](#3string)
-- [in python, string can be created using following ways](#in-python-string-can-be-created-using-following-ways)
-- [4. range()](#4-range)
-- [in python, range() function can be created using following syntax](#in-python-range-function-can-be-created-using-following-syntax)
-- [what is need of indexing](#what-is-need-of-indexing)
-- [what is need of slicing](#what-is-need-of-slicing)
-- [also sequence type it means](#also-sequence-type-it-means)
-- [set type](#set-type)
-- [in python, we will have two types of sets](#in-python-we-will-have-two-types-of-sets)
-- [ways](#ways)
-- [map type](#map-type)
-- [binary type](#binary-type)
-- [the following functions](#the-following-functions)
-- [None type](#none-type)
-- [Python input and output statements](#python-input-and-output-statements)
-- [in python, we will have two types of type conversion](#in-python-we-will-have-two-types-of-type-conversion)
-- [functions](#functions)
-- [output statement](#output-statement)
-- [note](#note)
-- [6) Python variables](#6-python-variables)
-- [7)  Python Operators](#7-python-operators)
-- [in python, we will have the following operators](#in-python-we-will-have-the-following-operators)
-- [1)  arithmetic  operator](#1-arithmetic-operator)
-- [2) relational operator](#2-relational-operator)
-- [in python, we will have the following  comparison operators](#in-python-we-will-have-the-following-comparison-operators)
-- [3)  logical operator](#3-logical-operator)
-- [in python, we have the following logical operators](#in-python-we-have-the-following-logical-operators)
-- [1) or   <=== logical or](#1-or-logical-or)
-- [2) and  <=== logical and](#2-and-logical-and)
-- [3 ) not  <=== logical not](#3-not-logical-not)
-- [note](#note)
-- [following data always "True"](#following-data-always-true)
-- [following data always "False"](#following-data-always-false)
-- [4) assignment operator](#4-assignment-operator)
-- [5)  membership operator](#5-membership-operator)
-- [in python, iterables are following](#in-python-iterables-are-following)
-- [in python, the following are membership operators](#in-python-the-following-are-membership-operators)
-- [6)  identity operator](#6-identity-operator)
-- [in python , identity operators are two types](#in-python-identity-operators-are-two-types)
-- [in python, we will have the following identity operators](#in-python-we-will-have-the-following-identity-operators)
-- [7)  conditional operator or ternary operator](#7-conditional-operator-or-ternary-operator)
-- [8) walrus operator](#8-walrus-operator)
-- [9) bitwise operator](#9-bitwise-operator)
-- [in python, we will have the following bitwise operators](#in-python-we-will-have-the-following-bitwise-operators)
-- [functions, conditional statements and looping statements](#functions-conditional-statements-and-looping-statements)
-- [operator](#operator)
-- [2. find the maximum number of the given three numbers](#2-find-the-maximum-number-of-the-given-three-numbers)
-- [4. check given number is perfect square or not](#4-check-given-number-is-perfect-square-or-not)
-- [the given list](#the-given-list)
-- [6. find the common elements of the given two lists](#6-find-the-common-elements-of-the-given-two-lists)
-- [common elements of the given two lists](#common-elements-of-the-given-two-lists)
-- ["+" operator](#operator)
-- [10.check given number contain prime digits or not](#10check-given-number-contain-prime-digits-or-not)
-- [11.check given number contains all are same digits are not](#11check-given-number-contains-all-are-same-digits-are-not)
-- [important , print the result as string only](#important-print-the-result-as-string-only)
-- [important)](#important)
-- [in python, the following are overloaded operators](#in-python-the-following-are-overloaded-operators)
-- [working with conditional statements](#working-with-conditional-statements)
-- [in python, we will have the following conditional statements](#in-python-we-will-have-the-following-conditional-statements)
-- [simple if statement](#simple-if-statement)
-- [if-else](#if-else)
-- [else-if ladder](#else-if-ladder)
-- [match case statement](#match-case-statement)
-- [nested conditional statements](#nested-conditional-statements)
-- [Looping statements](#looping-statements)
-- [in python, we will the following looping statements](#in-python-we-will-the-following-looping-statements)
-- [syntax for while loop](#syntax-for-while-loop)
-- [example-1](#example-1)
-- [example-2](#example-2)
-- [without using any built-in function](#without-using-any-built-in-function)
-- [string , print the result again as string, without using built-in function](#string-print-the-result-again-as-string-without-using-built-in-function)
-- [list](#list)
-- [4. find the minimum number in the list](#4-find-the-minimum-number-in-the-list)
-- [5. find the maximum character in the string](#5-find-the-maximum-character-in-the-string)
-- [6. find the minimum character in the given string](#6-find-the-minimum-character-in-the-given-string)
-- [the given list, without using any built-in function](#the-given-list-without-using-any-built-in-function)
-- [problems on numbers](#problems-on-numbers)
-- [1)  write a python program to print the factors of the given number](#1-write-a-python-program-to-print-the-factors-of-the-given-number)
-- [2) count the number of factors of the given number](#2-count-the-number-of-factors-of-the-given-number)
-- [3. check the given number is prime or not](#3-check-the-given-number-is-prime-or-not)
-- [4. check the given number is perfect number or not](#4-check-the-given-number-is-perfect-number-or-not)
-- [number](#number)
-- [number](#number)
-- [7. write a python to remove the all even digit of the given number](#7-write-a-python-to-remove-the-all-even-digit-of-the-given-number)
-- [8.check the given number is palindrome or not](#8check-the-given-number-is-palindrome-or-not)
-- [digit](#digit)
-- [10. write a python program to find the given number length](#10-write-a-python-program-to-find-the-given-number-length)
-- [contain duplicate digit](#contain-duplicate-digit)
-- [contain duplicate digit](#contain-duplicate-digit)
-- [where number must contain digits in the increasing order](#where-number-must-contain-digits-in-the-increasing-order)
-- [14. write a python program to find the factorial of the given number](#14-write-a-python-program-to-find-the-factorial-of-the-given-number)
-- [15. check the given number is Armstrong number or not](#15-check-the-given-number-is-armstrong-number-or-not)
-- [16. check the given number is "Strong number" or not](#16-check-the-given-number-is-strong-number-or-not)
-- [17.find the gcd or hcf of the given two numbers](#17find-the-gcd-or-hcf-of-the-given-two-numbers)
-- [18. find the lcm of the given two numbers](#18-find-the-lcm-of-the-given-two-numbers)
-- [where the duplicate digits are not allowed](#where-the-duplicate-digits-are-not-allowed)
-- [given two numbers](#given-two-numbers)
-- [in the given number](#in-the-given-number)
-- [23. print the prime numbers for the given range](#23-print-the-prime-numbers-for-the-given-range)
-- [programs on patterns](#programs-on-patterns)
-- [9)  Python un-conditional statements](#9-python-un-conditional-statements)
-- [in python, we will have the following un-conditional statements](#in-python-we-will-have-the-following-un-conditional-statements)
-- [1)  break](#1-break)
-- [2) continue](#2-continue)
-- [3)  pass](#3-pass)
-- [1) format specifiers](#1-format-specifiers)
-- [in python, we will have the following format specifiers](#in-python-we-will-have-the-following-format-specifiers)
-- [2) format() function](#2-format-function)
-- [11)  Python Data structures](#11-python-data-structures)
-- [in python, we will have the following data structures](#in-python-we-will-have-the-following-data-structures)
-- [indexing and slicing in python](#indexing-and-slicing-in-python)
-- [in python, we can apply indexing and slicing on the following](#in-python-we-can-apply-indexing-and-slicing-on-the-following)
-- [in Python, indexing will be two types](#in-python-indexing-will-be-two-types)
-- [elements without using any built-in function for the given list](#elements-without-using-any-built-in-function-for-the-given-list)
-- [any position  without using any built-in function](#any-position-without-using-any-built-in-function)
-- [any position  without using any built-in function](#any-position-without-using-any-built-in-function)
-- [move the all zeros to the end of the given array or list](#move-the-all-zeros-to-the-end-of-the-given-array-or-list)
-- [rotate the array or list for k number of times towards right](#rotate-the-array-or-list-for-k-number-of-times-towards-right)
-- [rotate the array or list for k number of times towards left](#rotate-the-array-or-list-for-k-number-of-times-towards-left)
-- [write a python program to find the highest frequency of the given element](#write-a-python-program-to-find-the-highest-frequency-of-the-given-element)
-- [write a python program to print the words of the given string as a list](#write-a-python-program-to-print-the-words-of-the-given-string-as-a-list)
-- [given string](#given-string)
-- [write a python program to print the all sub arrays of the given size k](#write-a-python-program-to-print-the-all-sub-arrays-of-the-given-size-k)
-- [write a python program print the all substrings of the given string](#write-a-python-program-print-the-all-substrings-of-the-given-string)
-- [Searching and Sorting in Python](#searching-and-sorting-in-python)
-- [Linear search](#linear-search)
-- [Binary Search](#binary-search)
-- [Bubble sort](#bubble-sort)
-- [the alphabetical order and print the result as a string](#the-alphabetical-order-and-print-the-result-as-a-string)
-- [insertion sort](#insertion-sort)
-- [selection sort](#selection-sort)
-- [list comprehension](#list-comprehension)
-- [set comprehension](#set-comprehension)
-- [dictionary comprehension](#dictionary-comprehension)
-- [working with list](#working-with-list)
-- [on list we can able to apply the following built-in functions](#on-list-we-can-able-to-apply-the-following-built-in-functions)
-- [working with list class functions](#working-with-list-class-functions)
-- [in list class, we will have the following functions or methods](#in-list-class-we-will-have-the-following-functions-or-methods)
-- [write a python program to make the dynamic list for given size, where it allow only even and positive integers](#write-a-python-program-to-make-the-dynamic-list-for-given-size-where-it-allow-only-even-and-positive-integers)
-- [flatten the list](#flatten-the-list)
-- [working with  tuple class functions](#working-with-tuple-class-functions)
-- [in python, we will have only two function from the tuple class](#in-python-we-will-have-only-two-function-from-the-tuple-class)
-- [while working with lists and tuples, we need to remember the following](#while-working-with-lists-and-tuples-we-need-to-remember-the-following)
-- [working with strings](#working-with-strings)
-- [on string we can able to apply the following built-in functions](#on-string-we-can-able-to-apply-the-following-built-in-functions)
-- [type conversion functions of the string class called "str"](#type-conversion-functions-of-the-string-class-called-str)
-- [when we want to given string lower case or upper case or not, in python we will use the following functions](#when-we-want-to-given-string-lower-case-or-upper-case-or-not-in-python-we-will-use-the-following-functions)
-- [the other string class (str) functions of the python are](#the-other-string-class-str-functions-of-the-python-are)
-- [1) count()](#1-count)
-- [2) index()](#2-index)
-- [3) lstrip()](#3-lstrip)
-- [strip()](#strip)
-- [6) replace()](#6-replace)
-- [7) join()](#7-join)
-- [8) format()](#8-format)
-- [9) split()](#9-split)
-- [10. startswith()](#10-startswith)
-- [11.endswith()](#11endswith)
-- [12. find()](#12-find)
-- [working with sets](#working-with-sets)
-- [on sets, we can able to apply the following functions](#on-sets-we-can-able-to-apply-the-following-functions)
-- [in "set" class , we will have the following functions](#in-set-class-we-will-have-the-following-functions)
-- [5) union()](#5-union)
-- [6) intersection()](#6-intersection)
-- [8) difference()](#8-difference)
-- [9)difference_update()](#9difference_update)
-- [11) symmetric_difference_update()](#11-symmetric_difference_update)
-- [15) update()](#15-update)
-- [16)clear()](#16clear)
-- [17.copy()](#17copy)
-- [when the set is "frozen set", we can able to apply the following operations](#when-the-set-is-frozen-set-we-can-able-to-apply-the-following-operations)
-- [working with dictionary](#working-with-dictionary)
-- [on dictionary , we can able to apply the following built-in functions](#on-dictionary-we-can-able-to-apply-the-following-built-in-functions)
-- [on python dictionary, we can able to apply the following operations](#on-python-dictionary-we-can-able-to-apply-the-following-operations)
-- [1) insert](#1-insert)
-- [2.update](#2update)
-- [3.delete operations](#3delete-operations)
-- [following functions](#following-functions)
-- [12)  Python Functions](#12-python-functions)
-- [in Python, we will have two types of functions](#in-python-we-will-have-two-types-of-functions)
-- [in python, we can able to create the user-defined functions in the following ways](#in-python-we-can-able-to-create-the-user-defined-functions-in-the-following-ways)
-- [what is mean by function calling](#what-is-mean-by-function-calling)
-- [in python, we can able to create the function in the following ways](#in-python-we-can-able-to-create-the-function-in-the-following-ways)
-- [1) function without arguments and without return type](#1-function-without-arguments-and-without-return-type)
-- [3) function with arguments and with return type](#3-function-with-arguments-and-with-return-type)
-- [4) function without arguments and with return type](#4-function-without-arguments-and-with-return-type)
-- [will take the following types of arguments](#will-take-the-following-types-of-arguments)
-- [1) positional arguments](#1-positional-arguments)
-- [2) keyword arguments](#2-keyword-arguments)
-- [3) default arguments](#3-default-arguments)
-- [4) variable length arguments](#4-variable-length-arguments)
-- [following ways](#following-ways)
-- [1) arbitrary arguments (*args)](#1-arbitrary-arguments-args)
-- [2) keyword arbitrary arguments(**kwargs)](#2-keyword-arbitrary-argumentskwargs)
-- [5) position-only arguments](#5-position-only-arguments)
-- [6) keyword only arguments](#6-keyword-only-arguments)
-- [rules to give the arguments in the function or function calling](#rules-to-give-the-arguments-in-the-function-or-function-calling)
-- [inner functions or nested functions or closures](#inner-functions-or-nested-functions-or-closures)
-- [recursion with python](#recursion-with-python)
-- [programs with recursion](#programs-with-recursion)
-- [1) print the numbers 1 to n using recursion](#1-print-the-numbers-1-to-n-using-recursion)
-- [3. print the maximum digit of the given number](#3-print-the-maximum-digit-of-the-given-number)
-- [using recursion, without any built-in function](#using-recursion-without-any-built-in-function)
-- [5. write a python program to find the  common maximum element of the given two lists using recursion  without using any built-in function](#5-write-a-python-program-to-find-the-common-maximum-element-of-the-given-two-lists-using-recursion-without-using-any-built-in-function)
-- [with using recursion, without any built-in function](#with-using-recursion-without-any-built-in-function)
-- [with using recursion, without any built-in function](#with-using-recursion-without-any-built-in-function)
-- [9. find the factorial of the given number using recursion](#9-find-the-factorial-of-the-given-number-using-recursion)
-- [using built-in functions and looping statements](#using-built-in-functions-and-looping-statements)
-- [12. Decimal to Binary using Recursion](#12-decimal-to-binary-using-recursion)
-- [13. Number to Words using Recursion](#13-number-to-words-using-recursion)
-- [14. 2nd Maximum Digit using Recursion](#14-2nd-maximum-digit-using-recursion)
-- [15. Print Words of a String using Recursion](#15-print-words-of-a-string-using-recursion)
-- [17. Sort Characters of a String using Recursion](#17-sort-characters-of-a-string-using-recursion)
-- [Enhancing Functions Without Changing Code](#enhancing-functions-without-changing-code)
+- [Python Full Stack with AI/ML](#python-full-stack-with-aiml)
+- [Python Full Stack](#python-full-stack)
+- [What is Python?](#what-is-python)
+- [Python Language Fundamentals](#python-language-fundamentals)
+- [Python Keywords & Reserved Words](#python-keywords-reserved-words)
+- [Python Comments](#python-comments)
+- [Python Identifiers](#python-identifiers)
+- [Python Data Types](#python-data-types)
+- [Python Input & Output](#python-input-output)
+- [Python Variables](#python-variables)
+- [Python Operators](#python-operators)
+- [Conditional Statements](#conditional-statements)
+- [Looping Statements](#looping-statements)
+- [Unconditional Statements (break / continue / pass)](#unconditional-statements-break-continue-pass)
+- [Output Formatting](#output-formatting)
+- [Python Data Structures](#python-data-structures)
+- [Indexing & Slicing](#indexing-slicing)
+- [Searching & Sorting](#searching-sorting)
+- [List Comprehension](#list-comprehension)
+- [Set Comprehension](#set-comprehension)
+- [Dictionary Comprehension](#dictionary-comprehension)
+- [Working with Lists](#working-with-lists)
+- [List Class Methods](#list-class-methods)
+- [Working with Strings](#working-with-strings)
+- [Working with Sets](#working-with-sets)
+- [Working with Dictionary](#working-with-dictionary)
+- [Python Functions](#python-functions)
+- [Recursion Programs](#recursion-programs)
 - [Monkey Patching](#monkey-patching)
 - [Decorators](#decorators)
 
@@ -303,12 +43,12 @@
 
 ---
 
-## Python Full stack with AI/ML:
+## Python Full Stack with AI/ML
 
 
 ---
 
-## Python full stack:
+## Python Full Stack
 
 
 full stack is a "combination of front-end and back-end" 
@@ -316,9 +56,7 @@ full stack is a "combination of front-end and back-end"
 full stack refers " front-end+ back-end+ databases+ deployment"  
 
 
----
-
-## what is mean by Front-end:
+### Front-End
 
 
 front-end means "application user interface" 
@@ -342,11 +80,6 @@ of applications:
 when want to develop the application UI for the above applications, 
 
 
----
-
-## we will use the following Tech.:
-
-
 1)  HTML: 
 
 html is a "markup language", which is uses "tags" to describe the 
@@ -358,9 +91,7 @@ using "HTML", we can able to "Design or create the structure of the
 UI or application User Interface"  
 
 
----
-
-## 2) CSS:
+**2) CSS**
 
 
 css is a style sheet using this we can able to give the "Look and feel 
@@ -368,9 +99,7 @@ css is a style sheet using this we can able to give the "Look and feel
 for any application UI, which is made with HTML"
 
 
----
-
-## 3)  JS:
+**3)  JS**
 
 
 java script is a "client-side scripting language" 
@@ -386,9 +115,7 @@ with  help JS, we can able to perform the following actions:
 3) any DOM activities,............................
 
 
----
-
-## 4) Bootstrap:
+**4) Bootstrap**
 
 
 bootstrap is also called as "CSS framework"
@@ -408,16 +135,12 @@ JS  ===> to write any coding at  "Application UI"
 Bootstrap  ===> to make the application UI as responsive 
 
 
----
-
-## UI framework( to develop the end-to-end Realtime UI):
+### UI framework( to develop the end-to-end Realtime UI)
 
 React 
 
 
----
-
-## what is mean by back-end:
+### Back-End
 
 
 back-end means "application server", which is used to process the  
@@ -441,9 +164,7 @@ following technologies:
 in our course,  we are learning " Python" as back-end technology.
 
 
----
-
-## what is mean by database:
+### Database
 
 
 database in used in the application, to store the all application users
@@ -451,9 +172,7 @@ database in used in the application, to store the all application users
 data 
 
 
----
-
-## what is data?
+### What is Data?
 
 
 data refers "what we can able to store in the computer memory" 
@@ -507,9 +226,7 @@ the following are the popular RDBMS :
 in our course we are learning "MySQL with SQL" as relational database 
 
 
----
-
-## 2)  Non-relational Database:
+### Non-Relational Database
 
 
 any database store the data other than table to store the data, then 
@@ -544,9 +261,7 @@ web frameworks:
        Django ====> to make any larger application 
 
 
----
-
-## API Frameworks:
+### API Frameworks
 
 
 Rest API with Django
@@ -558,14 +273,10 @@ DSA
 using python full stack, we can able to develop the following 
 
 
----
-
-## applications:
+**applications**
 
 
----
-
-## 1. stand-alone application or desktop application :
+### 1. Stand-Alone / Desktop Application
 
 
 when we say any application is "stand-alone application" or "desktop"
@@ -583,9 +294,7 @@ these applications we can develop in the very limited space in real time,
 because these application will never allow the  "sharing of data" 
 
 
----
-
-## 2. web application or internet application:
+### 2. Web / Internet Application
 
 
 if we say any application is "Web or enterprise application" , then the 
@@ -607,9 +316,7 @@ in this applications, we can not able to have "Server to server"
 communication 
 
 
----
-
-## 3. Enterprise application:
+### 3. Enterprise Application
 
 
 every enterprise application by default "Web application", but not 
@@ -635,9 +342,7 @@ in the following ways:
 2)  Third-party server communication 
 
 
----
-
-## the major common issues with enterprise application:
+### Common Issues with Enterprise Apps
 
 
 1)   when the load is high, it un able to process 
@@ -649,9 +354,7 @@ in the following ways:
 4) it maintain different databases for each server
 
 
----
-
-## 4. Distributed application:
+### 4. Distributed Application
 
 
 distributed application is can be  "Web or enterprise" application  it 
@@ -671,7 +374,7 @@ maintain the following:
 
 ---
 
-## what is python?
+## What is Python?
 
 
 python is a "high-level, strongly typed, dynamic typed, object-oriented 
@@ -679,19 +382,13 @@ python is a "high-level, strongly typed, dynamic typed, object-oriented
 programming language"  
 
 
----
-
-## why python high-level?
+### Why is Python High-Level?
 
 
----
-
-## in computers, we  will have following types of languages:
+### in computers, we  will have following types of languages
 
 
----
-
-## 1) high-level language:
+### High-Level Language
 
 
 if language which is used by  "programmers or developers" to write 
@@ -703,9 +400,7 @@ language
 example:  python, c, c++, java, php,.................
 
 
----
-
-## 2) binary language or machine or low-level:
+### Binary / Machine / Low-Level Language
 
 
 if any language is understand by  "computer or machine", then the 
@@ -731,9 +426,7 @@ python uses "both compiler and interpreter" as a language translator
 to convert the code into binary 
 
 
----
-
-## why python is strongly typed:
+### Why Python is Strongly Typed
 
 
 python is a strongly typed language, because, when we are performing
@@ -749,9 +442,7 @@ language is called as "loosely typed language"
 example: javascript
 
 
----
-
-## why python is dynamic typed?
+### Why Python is Dynamic Typed
 
 
 python is a dynamic typed, because any data we are storing into the
@@ -771,9 +462,7 @@ language is called as "static typed language"
 example:   C, C++, Java,............
 
 
----
-
-## why python is object-oriented?
+### Why Python is Object-Oriented
 
 
 object-oriented is a programming paradigm 
@@ -791,9 +480,7 @@ or developer can able to write the code"
 if we say any language is object-oriented, then the language must 
 
 
----
-
-## follow the following  concepts:
+### follow the following  concepts
 
 
 1)  classes and objects 
@@ -811,9 +498,7 @@ python supports above all concepts, that is reason  "python is called as
 object-oriented"   
 
 
----
-
-## why python?:
+### Why Python?
 
 
 1)  Python is very easy to learn , when compare with other languages,
@@ -821,9 +506,7 @@ object-oriented"
     because very simple syntax 
 
 
----
-
-## 2) Python is used in the following domains:
+### Python is used in the following domains
 
 
           1)  application development 
@@ -863,17 +546,13 @@ when we want to runs the python program we need the following
 hard ware and software: 
 
 
----
-
-## hard ware:
+**hard ware**
 
 
                 RAM, Processor 
 
 
----
-
-## software:
+**software**
 
 
         OS, Compiler, PVM(which contains Interpreter)
@@ -881,9 +560,7 @@ hard ware and software:
 when we write the python program, the python program will be 
 
 
----
-
-## executed in the following steps:
+### executed in the following steps
 
 
 1)  first we need to write the python program and save it with some 
@@ -919,9 +596,7 @@ must have "PVM", where the byte code makes the "python as
 platform  independent" , but the PVM is always "platform dependent"
 
 
----
-
-## python is a open source:
+### Python is Open Source
 
 
 when we say any software or system is open source, then the it's 
@@ -960,9 +635,7 @@ we will have the following python flavours:
  
 
 
----
-
-## how to work with python?
+### how to work with python?
 
 
 when we want to work with python programming , we will use "IDLE"
@@ -972,9 +645,7 @@ IDLE is a software and which is used to "Write, Run, Test and Debug
 any program" 
 
 
----
-
-## the following popular IDLE's:
+### the following popular IDLE's
 
 
 1)  Python IDLE  (this will come automatically, when install python)
@@ -992,9 +663,7 @@ any program"
 first we need to download and  install the python 
 
 
----
-
-## use the following url for download python:
+### use the following url for download python
 
 
 https://www.python.org/downloads/
@@ -1004,9 +673,7 @@ after installing the python , we need to install the a frame work
 called " Anaconda Navigator" 
 
 
----
-
-## use the following URL to download Anaconda Navigator:
+### use the following URL to download Anaconda Navigator
 
 
 https://www.anaconda.com/download
@@ -1014,17 +681,10 @@ https://www.anaconda.com/download
 
 ---
 
-## Python language fundamentals :
+## Python Language Fundamentals
 
 
----
-
-## 1)  Python character set:
-
-
----
-
-## in python, we will have three types of characters:
+### Python Character Set
 
 
 1)  letters 
@@ -1044,9 +704,7 @@ https://www.anaconda.com/download
             0, 1, 2 ,3 ,4 ,5, 6 ,7 ,8,9
 
 
----
-
-## 3)  special characters or symbols:
+### special characters or symbols
 
 
 +, *, -, ~, !,@, #,$,%, ^, &, (, ),[, ],{,}, |, \,/,',",:,;,,,.,=,_,<,>,...................
@@ -1054,7 +712,7 @@ https://www.anaconda.com/download
 
 ---
 
-## 2) Python keywords or reserved words:
+## Python Keywords & Reserved Words
 
 
 keywords are also called "reserved words", these words are given 
@@ -1062,11 +720,6 @@ keywords are also called "reserved words", these words are given
 by python and these words are used in python for specific purpose in 
 
 the python program 
-
-
----
-
-## the following are important keywords of the python language:
 
 
 for operators: 
@@ -1104,9 +757,7 @@ for context managers:  with
 when we want to get the all python keywords of the current version 
 
 
----
-
-## , we will use the following python code:
+### , we will use the following python code
 
 
 import keyword 
@@ -1115,7 +766,7 @@ print(keyword.kwlist)
 
 ---
 
-## 3) Python Comments:
+## Python Comments
 
 
 comments will "Describe the code"
@@ -1129,9 +780,7 @@ developer, while implementing  code, they always need to write the
 comments
 
 
----
-
-## in python, we can have two types of comments:
+### in python, we can have two types of comments
 
 
 1)  single line comments  
@@ -1145,9 +794,7 @@ comments
                           #write the comments 
 
 
----
-
-## 2) multi-line comments :
+### multi-line comments 
 
 
           when we want to write the comments in the multiple lines, in 
@@ -1173,7 +820,7 @@ comments will be ignored by compiler while translation
 
 ---
 
-## 4) Python Identifiers:
+## Python Identifiers
 
 
 any name in the python program is called  as "identifier" 
@@ -1185,9 +832,7 @@ class name, function name,..................."
 when we want to create the identifier in python, we will use the 
 
 
----
-
-## following rules:
+**following rules**
 
 
 1)  identifier always must starts with "letter or underscore" 
@@ -1229,7 +874,7 @@ abc# (invalid)
 
 ---
 
-## 5) Python Data types:
+## Python Data Types
 
 
 data type refers "what type of data the variable has"
@@ -1237,11 +882,6 @@ data type refers "what type of data the variable has"
 when we want to know the "what type of data the variable has",
 
 in python, we will use a function  called "type()"
-
-
----
-
-## in python, we will have the following datatypes:
 
 
 1)  numeric type 
@@ -1265,9 +905,7 @@ the above all are also called as "python built-in data types", built-in data
 types refers "the data types which are given by python" 
 
 
----
-
-## 1. numeric type:
+### Numeric Types
 
 
 numeric type refers "numbers" 
@@ -1285,9 +923,7 @@ in python, we will have the following types of numbers:
                     example:   1.234,-4.567,8.9012,.............
 
 
----
-
-## 3) complex numbers
+### Complex Numbers
 
                 
 
@@ -1306,14 +942,10 @@ in python, we will have the following types of numbers:
   
 
 
----
-
-## 4) special numbers:
+### Special Numbers
 
 
----
-
-## 1) binary number:
+### Binary Numbers
 
 
 in python , we can able to represent the binary number with the prefix
@@ -1323,9 +955,7 @@ called "ob or 0B"
 example:  0b10101, oB110011 
 
 
----
-
-## 2) octal number :
+### Octal Numbers
 
 
 in python , we can able to represent the octal number with the prefix
@@ -1335,9 +965,7 @@ called "oo or 0O"
 example:  0o157, 0O1777 
 
 
----
-
-## 3) decimal number:
+### Decimal Numbers
 
 
 in python, no any special representation for "Decimal number", because
@@ -1346,9 +974,7 @@ every integer number, in python by default "Decimal" number
 
         
 
----
-
-## 4) hexa-decimal number :
+### Hexadecimal Numbers
 
 
 in python , we can able to represent the hexe-decimal number with the 
@@ -1368,14 +994,7 @@ for memory addressing and system purpose, we will use "octal and
 hexa-decimal" number 
 
 
----
-
-## 2.Boolean type:
-
-
----
-
-## in python, we will have two Boolean values:
+### Boolean Type
 
 
              1)  True  (We can not write this as true)
@@ -1401,9 +1020,7 @@ print(True*False+10)  ==>10
 ```
 
 
----
-
-## 3. text type or character type:
+### Text / String Type
 
 
 any text data in python, we are calling as "string" 
@@ -1411,11 +1028,6 @@ any text data in python, we are calling as "string"
 any string data can be represented in quotes (' ' or " " or """ """ or ''' 
 
 ''')
-
-
----
-
-## in python, we will have two types of strings:
 
 
 1)  inline string 
@@ -1429,9 +1041,7 @@ example:
 "hello" 
 
 
----
-
-## 2)  multi-line string
+### multi-line string
 
 
 when we want to represent the any string as multi-line, then we will
@@ -1439,9 +1049,7 @@ when we want to represent the any string as multi-line, then we will
 use "triple quotes" 
 
 
----
-
-## 4)  sequence type:
+### Sequence Types
 
 
 when we want to store the multiple values under one single name, 
@@ -1459,9 +1067,7 @@ data type must follow "indexing and slicing" and data will store
 exactly  in the given order in the memory while creation 
 
 
----
-
-## in python, the following are the sequence data types:
+### in python, the following are the sequence data types
 
 
 1)  list 
@@ -1477,9 +1083,7 @@ above all will follow the indexing and slicing , all will store the data
 exactly in the order
 
 
----
-
-## in python, sequence types are divided into two types:
+### in python, sequence types are divided into two types
 
 
 1) mutable sequence type  (Which allow the changes)
@@ -1493,11 +1097,6 @@ allow the changes , here the changes can be done using " insert ,update
 , delete" operation 
 
 
----
-
-## the following are mutable sequence types in Python:
-
-
 1)  list 
 
 when we say any sequence type is "immutable" , the sequence type will
@@ -1507,11 +1106,6 @@ not  allow the changes , here the changes can not be done using "
 insert ,update , delete" operation 
 
 
----
-
-## the following are immutable sequence types:
-
-
 1)  tuple 
 
 2)  string 
@@ -1519,9 +1113,7 @@ insert ,update , delete" operation
 3)  range()
 
 
----
-
-## list:
+### List
 
 
 list is a "mutable sequence type, which allow the insert, update, delete 
@@ -1529,9 +1121,7 @@ list is a "mutable sequence type, which allow the insert, update, delete
 , indexing and slicing operations" 
 
 
----
-
-## in python , list can be created using following ways:
+### in python , list can be created using following ways
 
 
 1) using "[]" (Subscript) 
@@ -1539,9 +1129,7 @@ list is a "mutable sequence type, which allow the insert, update, delete
 2) using list() constructor 
 
 
----
-
-## in python, list can be:
+### in python, list can be
 
 
 1) empty 
@@ -1563,9 +1151,7 @@ example:
 [[1,2,3,45]] 
 
 
----
-
-## tuple:
+### Tuple
 
 
 tuple is a "immutable sequence type, which no allow the insert, update, 
@@ -1573,9 +1159,7 @@ tuple is a "immutable sequence type, which no allow the insert, update,
 delete , but  allow indexing and slicing operations" 
 
 
----
-
-## in python , tuple can be created using following ways:
+### in python , tuple can be created using following ways
 
 
 1) using "()" 
@@ -1583,9 +1167,7 @@ delete , but  allow indexing and slicing operations"
 2) using tuple() constructor 
 
 
----
-
-## in python, tuple can be:
+### in python, tuple can be
 
 
 1) empty 
@@ -1607,9 +1189,7 @@ delete , but  allow indexing and slicing operations"
 ```
 
 
----
-
-## 3.string:
+### String
 
 
 in Python, string is used to store the any data inside the quotes,  
@@ -1621,9 +1201,7 @@ slicing , but never allow the any changes (on strings, we can not able
 to perform operations like insert, update and delete operations)  
 
 
----
-
-## in python, string can be created using following ways:
+### in python, string can be created using following ways
 
 
 1)  using quotes 
@@ -1645,9 +1223,7 @@ string can also have "duplicate data"
 ```
 
 
----
-
-## 4. range():
+### range()
 
 
 in python,  range() is used to "generate the values for given  start to 
@@ -1669,9 +1245,7 @@ range() function can not  generate the duplicate values, always
 generate the unique values 
 
 
----
-
-## in python, range() function can be created using following syntax:
+### in python, range() function can be created using following syntax
 
 
                      range(start, end, step) 
@@ -1751,9 +1325,7 @@ range(5,5,2) ====> no output
 ```
 
 
----
-
-## what is need of indexing:
+### what is need of indexing
 
 
 indexing is used in python, to access the any data from the "sequence
@@ -1767,9 +1339,7 @@ when we are given any wrong index,  to access any data from the
 sequence type, python will raise an error called "Index Error" 
 
 
----
-
-## what is need of slicing:
+### what is need of slicing
 
 
 slicing is used in python, to access the "zero or more elements 
@@ -1777,11 +1347,6 @@ slicing is used in python, to access the "zero or more elements
 from the given sequence type" 
 
 when we apply the slicing on the any sequence type, then the result 
-
-
----
-
-## also sequence type it means
 
 
   slicing on list , return "list as result" 
@@ -1798,9 +1363,7 @@ when we doing slicing on "any sequence type" with wrong indexing ,
 python never given any  index error
 
 
----
-
-## set type:
+### Set Type
 
 
 set type is used to "store the group of values, but set type always can 
@@ -1816,11 +1379,6 @@ in python , set type is also called as "un-ordered collection" , because
 sets does not  store the  data in the given order always 
 
 
----
-
-## in python, we will have two types of sets:
-
-
 1)  set 
 
        in python, set is called as "mutable non-sequence type" 
@@ -1830,9 +1388,7 @@ sets does not  store the  data in the given order always
 when we want to create the set in python, we will use the following 
 
 
----
-
-## ways:
+**ways**
 
 
 1)  using "{}" 
@@ -1860,9 +1416,7 @@ union, intersection, difference, symmetric difference,..........., these all
 are we can not apply on "frozen set"
 
 
----
-
-## map type:
+### Map Type (Dictionary)
 
 
 when we want to store the data as a key and value pair, in python we
@@ -1912,9 +1466,7 @@ in python, dictionary , keys are act like a "indexes", to access the data
 or values of the dictionary 
 
 
----
-
-## binary type:
+### Binary Type
 
 
 in python, we can represent binary information in the following   ways, 
@@ -1938,9 +1490,7 @@ syntax:
 in python, to represent the data as binary (not number), we will use
 
 
----
-
-## the following functions:
+### the following functions
 
 
 1. bytes()
@@ -1956,9 +1506,7 @@ slicing"
 in python, bytes is immutable and bytearray is mutable
 
 
----
-
-## None type:
+### None Type
 
 
 when we want to represent the any data as  "no value or no data or 
@@ -1970,7 +1518,7 @@ to store none type value, python given a keyword called "None"
 
 ---
 
-## Python input and output statements:
+## Python Input & Output
 
 
 when we want to give the any input to program while execution by 
@@ -2000,11 +1548,6 @@ take the given data exactly in given format, for this we are using
 a process called  "Type conversion" 
 
 
----
-
-## in python, we will have two types of type conversion:
-
-
 1)  implicit type conversion
 
         this type conversion will be performed automatically by 
@@ -2019,9 +1562,7 @@ a process called  "Type conversion"
 to perform the type conversions, we will use the following  important
 
 
----
-
-## functions:
+**functions**
 
 
 from                                       to                                      function 
@@ -2071,9 +1612,7 @@ float                                      complex                           com
 Boolean                                complex                          complex() 
 
 
----
-
-## output statement:
+**output statement**
 
 
 when we want to display the any result of the program after execution 
@@ -2089,9 +1628,7 @@ syntax:
    print(val1, val2, val2, val4,.........valn, sep=" ", end=" ") 
 
 
----
-
-## note:
+**note**
 
 
 in python,
@@ -2171,7 +1708,7 @@ print(20,30,40,sep="\n")
 
 ---
 
-## 6) Python variables:
+## Python Variables
 
 
 variable means "named memory location" and using this we can able 
@@ -2240,7 +1777,7 @@ print(type(a))
 
 ---
 
-## 7)  Python Operators:
+## Python Operators
 
 
 operator is a  "symbol" and which is to perform operation on 
@@ -2254,14 +1791,7 @@ example:
 10+20  ===> 30  where a, b are "operands" , + is operator 
 
 
----
-
-## in python, we will have the following operators:
-
-
----
-
-## 1)  arithmetic  operator :
+### Arithmetic Operators
 
 
 arithmetic operator is used to perform "arithmetic operations" 
@@ -2319,9 +1849,7 @@ print(a**3)
 ```
 
 
----
-
-## 2) relational operator:
+### Relational Operators
 
 
 relational operator is also called as "comparison operator"  
@@ -2333,11 +1861,6 @@ this operator
 in python, relational operators will return result always "Boolean" , it 
 
 mean "either True or False" 
-
-
----
-
-## in python, we will have the following  comparison operators:
 
 
 1) > 
@@ -2382,9 +1905,7 @@ relational operators"
 ```
 
 
----
-
-## 3)  logical operator:
+### Logical Operators
 
 
 logical operator is used to "Compare the any two conditions" 
@@ -2392,14 +1913,10 @@ logical operator is used to "Compare the any two conditions"
 in python, logical operator, will return result always as "Boolean" 
 
 
----
-
-## in python, we have the following logical operators:
+### in python, we have the following logical operators
 
 
----
-
-## 1) or   <=== logical or
+### or   <=== logical or
 
 
 in the case of  "logical or",  if any one condition is "true", then the 
@@ -2407,9 +1924,7 @@ in the case of  "logical or",  if any one condition is "true", then the
 entire result is "True"  
 
 
----
-
-## 2) and  <=== logical and
+### and  <=== logical and
 
 
 in the case of  "logical and",  if any one condition is "false", then the 
@@ -2417,9 +1932,7 @@ in the case of  "logical and",  if any one condition is "false", then the
 entire result is "false"   
 
 
----
-
-## 3 ) not  <=== logical not:
+### 3 ) not  <=== logical not
 
 
 in the case of  logical not, 
@@ -2439,9 +1952,7 @@ print(not(a>b))
 ```
 
 
----
-
-## note:
+**note**
 
 
 in python, both logical-or and logical-and will also  called as "short-
@@ -2490,9 +2001,7 @@ when we want to convert the any data into Boolean , in python ,
 we should remember the following: 
 
 
----
-
-## following data always "True"
+### following data always "True"
 
 
 any number other than zero,  any list with  data, any tuple with 
@@ -2502,17 +2011,13 @@ data, any set with data, any dictionary with data, any range() with
 data, any string with data
 
 
----
-
-## following data always "False"
+### following data always "False"
 
 
 zero, None, empty list  | tuple  | set | dictionary | range() | string 
  
 
----
-
-## 4) assignment operator:
+### Assignment Operators
 
 
 when we want to assign the any value to the variable in python , we
@@ -2542,9 +2047,7 @@ print(a)
 ```
 
 
----
-
-## 5)  membership operator:
+### Membership Operators
 
 
 when we want to check the "given data" is present or not  in the given  
@@ -2552,9 +2055,7 @@ when we want to check the "given data" is present or not  in the given
 iterable, in python, we will use "membership operators" 
 
 
----
-
-## in python, iterables are following:
+### in python, iterables are following
 
 
 1)  list 
@@ -2570,9 +2071,7 @@ iterable, in python, we will use "membership operators"
 6)  dictionary .....................
 
 
----
-
-## in python, the following are membership operators:
+### in python, the following are membership operators
 
 
 1) in  ( in is used "to check given data is present or not in the iterable")  
@@ -2614,9 +2113,7 @@ True
 ```
 
 
----
-
-## 6)  identity operator :
+### Identity Operators
 
 
 in python, we will use "identity operator" to compare the given objects
@@ -2630,9 +2127,7 @@ will use "==" operator, when we want to compare objects reside at
 same memory location or not, we will use "identity operator" 
 
 
----
-
-## in python , identity operators are two types:
+### in python , identity operators are two types
 
 
 1) is 
@@ -2688,11 +2183,6 @@ same.
 if two references refers "Different" objects, then their memory  
 
 address is also different.  
-
-
----
-
-## in python, we will have the following identity operators:
 
 
 1)   is  operator  
@@ -2777,9 +2267,7 @@ True
 ```
 
 
----
-
-## 7)  conditional operator or ternary operator:
+### Ternary / Conditional Operator
 
 
 when we want to perform the any operation based on condition  in 
@@ -2821,9 +2309,7 @@ print(a) if a>b else print(b)
 ```
 
 
----
-
-## 8) walrus operator:
+### Walrus Operator
 
 
 when we want to perform the  "Assignment", "operation" and 
@@ -2867,9 +2353,7 @@ False
 ```
 
 
----
-
-## 9) bitwise operator:
+### Bitwise Operators
 
 
 when we want to perform the operation on the binary data of the 
@@ -2880,11 +2364,6 @@ given data , then in python we are use "bitwise operators"
 data ===> binary ===> bitwise ===> binary ===> data 
 
 in python , bitwise operators are also called as "binary operators" 
-
-
----
-
-## in python, we will have the following bitwise operators:
 
 
 1) bitwise or 
@@ -2987,17 +2466,10 @@ write the  programs for the following  questions without using built-in
 ```
 
 
----
-
-## functions, conditional statements and looping statements:
-
-
 1. find the remainder of the given two numbers without using "%" 
 
 
----
-
-## operator
+**operator**
 
 
 ```python
@@ -3011,9 +2483,7 @@ print(num1) if num1<num2 else print(num1-(num2)*(num1//num2))
 ```
 
 
----
-
-## 2. find the maximum number of the given three numbers:
+### find the maximum number of the given three numbers
 
 
 ```python
@@ -3039,9 +2509,7 @@ print("odd") if a%2 else print("even")
 ```
 
 
----
-
-## 4. check given number is perfect square or not:
+### check given number is perfect square or not
 
 
 """check given number is perfect sqaure or not
@@ -3053,9 +2521,7 @@ print("perfect square") if a==res**2 else print("not perfect square")
 5. write a python program to   remove the all duplicate elements of 
 
 
----
-
-## the given list:
+### the given list
 
 
 ```python
@@ -3079,9 +2545,7 @@ print([*l1])
 ```
 
 
----
-
-## 6. find the common elements of the given two lists:
+### find the common elements of the given two lists
 
 
 l1=[1,2,3,4] 
@@ -3102,9 +2566,7 @@ print([*{*l1}&{*l2}])
 7. find the given two lists unique elements and result never contain 
 
 
----
-
-## common elements of the given two lists:
+### common elements of the given two lists
 
 
 l1=[1,2,3,4] 
@@ -3141,9 +2603,7 @@ print(*range(start,end,2),sep=",")
 9. write a python program to add the given two number without using 
 
 
----
-
-## "+" operator:
+**"+" operator**
 
 
 ```python
@@ -3153,9 +2613,7 @@ print(a-(-b))
 ```
 
 
----
-
-## 10.check given number contain prime digits or not :
+### 10.check given number contain prime digits or not
 
 
 123 ===>  yes 
@@ -3171,9 +2629,7 @@ print("yes") if "2" in num or "3" in num or "5" in num or "7" in num else print(
 ```
 
 
----
-
-## 11.check given number contains all are same digits are not:
+### 11.check given number contains all are same digits are not
 
 
 111 ===> yes 
@@ -3190,9 +2646,7 @@ print("yes") if {*f'{n%10}'}=={*f'{n}'} else print("no")
 12. remove the all vowels of the given string, where order is not 
 
 
----
-
-## important , print the result as string only:
+### important , print the result as string only
 
 
 abcd ===> bcd 
@@ -3209,9 +2663,7 @@ print(*string,sep="")
 ```
 
 
----
-
-## important):
+**important)**
 
 
 s1="abc" 
@@ -3251,9 +2703,7 @@ in python, when we use any operator more than once doing any
 operation , then the operator is called as "overloaded operator" 
 
 
----
-
-## in python, the following are overloaded operators:
+### in python, the following are overloaded operators
 
 
 1) "+" 
@@ -3503,7 +2953,7 @@ True
 
 ---
 
-## working with conditional statements:
+## Conditional Statements
 
 
 when we want to execute the any logic, based on the condition , in 
@@ -3517,11 +2967,6 @@ at a time based on the condition , but in the conditional statements we
 can able to write the any number of "statements" 
 
 
----
-
-## in python, we will have the following conditional statements:
-
-
 1) simple if statement 
 
 2) if-else statement 
@@ -3533,9 +2978,7 @@ can able to write the any number of "statements"
 5) nested conditional statement 
 
 
----
-
-## simple if statement:
+### Simple if Statement
 
 
 when we want to execute the  "any logic" based on the condition, 
@@ -3569,9 +3012,7 @@ if a>100:
 ```
 
 
----
-
-## if-else:
+### if-else Statement
 
 
 when we want to execute the logic  for both "True and False" , in 
@@ -3622,9 +3063,7 @@ we can not write the "any condition for else", because else will execute
 by default , the condition what we taken for "if" is "false" 
 
 
----
-
-## else-if ladder:
+### else-if Ladder
 
 
 using this we can able execute the logic  based condition wise , in
@@ -3672,9 +3111,7 @@ else:
 ```
 
 
----
-
-## match case statement:
+### match-case Statement
 
 
 match case statement in python as similar to "switch case statement" 
@@ -3757,9 +3194,7 @@ match choice:
 ```
 
 
----
-
-## nested conditional statements:
+### Nested Conditional Statements
 
 
 in python, we can able to write the "conditional statements inside 
@@ -3823,7 +3258,7 @@ else:
 
 ---
 
-## Looping statements:
+## Looping Statements
 
 
 looping statements are also called as "iterative statements"
@@ -3833,11 +3268,6 @@ when we want to execute the any logic for any number of times
 until the condition is become False, in python we are going to use 
 
 "looping statements"  or "Iterative statements"
-
-
----
-
-## in python, we will the following looping statements:
 
 
 1)  While Loop
@@ -3861,9 +3291,7 @@ we are going to use "While loop" , that is reason "While" loop is
 also called as "conditional based loop" 
 
 
----
-
-## syntax for while loop:
+### while Loop
 
 
 while condition: 
@@ -4033,9 +3461,7 @@ syntax:
                       #write the logic here
 
 
----
-
-## example-1:
+**example-1**
 
 
 l1=[1,2,3,4,5,6,7,8,9,10]
@@ -4058,9 +3484,7 @@ for i in l1:
 ```
 
 
----
-
-## example-2:
+**example-2**
 
 
 l1=(1,2,3,4,5,6,7,8,9,10)
@@ -4200,9 +3624,7 @@ output:
 1. write a python program to print the length of the given string , 
 
 
----
-
-## without using any built-in function:
+### without using any built-in function
 
 
 input:   hello 
@@ -4220,9 +3642,7 @@ print(length)
 2. write a python program remove the vowels of the from the given 
 
 
----
-
-## string , print the result again as string, without using built-in function:
+### string , print the result again as string, without using built-in function
 
 
 input: abcd efgh 
@@ -4241,9 +3661,7 @@ for i in s1: #abcd
 3. write a python program print the maximum number in the given 
 
 
----
-
-## list:
+### List
 
 
 input: [1,2,3,4,5,6] 
@@ -4261,9 +3679,7 @@ print(maximum)
 ```
 
 
----
-
-## 4. find the minimum number in the list:
+### find the minimum number in the list
 
 
 input=[1,2,3,4,5] 
@@ -4282,9 +3698,7 @@ print(minimum)
 ```
 
 
----
-
-## 5. find the maximum character in the string:
+### find the maximum character in the string
 
 
 input: abcd  
@@ -4303,9 +3717,7 @@ print(maximum)
 ```
 
 
----
-
-## 6. find the minimum character in the given string:
+### find the minimum character in the given string
 
 
 ```python
@@ -4320,9 +3732,7 @@ print(minimum)
 ```
 
 
----
-
-## the given list, without using any built-in function:
+### the given list, without using any built-in function
 
 
 ```python
@@ -4360,14 +3770,7 @@ for i in range(start,end+1):
 ```
 
 
----
-
-## problems on numbers:
-
-
----
-
-## 1)  write a python program to print the factors of the given number:
+### write a python program to print the factors of the given number
 
 
 ```python
@@ -4381,9 +3784,7 @@ while fact<=num:
 ```
 
 
----
-
-## 2) count the number of factors of the given number:
+### count the number of factors of the given number
 
 
 ```python
@@ -4398,9 +3799,7 @@ print(count)
 ```
 
 
----
-
-## 3. check the given number is prime or not:
+### check the given number is prime or not
 
 
 ```python
@@ -4414,9 +3813,7 @@ print("prime") if count==2 else print("not prime")
 ```
 
 
----
-
-## 4. check the given number is perfect number or not:
+### check the given number is perfect number or not
 
 
 ```python
@@ -4431,9 +3828,7 @@ print("perfect") if sum==num else print("not perfect")
 
 5. write a python program print the maximum  digit in the given 
 
----
-
-## number:
+**number**
 
 
 ```python
@@ -4449,9 +3844,7 @@ print(maximum)
 
 6. write a python program to print the minimum digit of the given  
 
----
-
-## number:
+**number**
 
 
 ```python
@@ -4466,9 +3859,7 @@ print(minimum)
 ```
 
 
----
-
-## 7. write a python to remove the all even digit of the given number:
+### write a python to remove the all even digit of the given number
 
 
 num: 1234 
@@ -4485,9 +3876,7 @@ for i in num:
 ```
 
 
----
-
-## 8.check the given number is palindrome or not:
+### 8.check the given number is palindrome or not
 
 
 num: 121
@@ -4514,9 +3903,7 @@ number must be 3-digit number and where number never contain
 duplicate digits and where the combination also never contain duplicate
 
 
----
-
-## digit:
+**digit**
 
 
 number: 123 
@@ -4556,16 +3943,14 @@ if length==3:
                 print(i)
     else:
         print("given number contain duplicate digits")
-```
 
-        
+
 else:
     print("given number is not valid 3-digit number")
+```
 
 
----
-
-## 10. write a python program to find the given number length:
+### write a python program to find the given number length
 
 
 number: 1234 
@@ -4585,9 +3970,7 @@ never contain duplicate digits and where the combination also never
 ```
 
 
----
-
-## contain duplicate digit:
+### contain duplicate digit
 
 
 ```python
@@ -4622,9 +4005,7 @@ can contain duplicate digits and where the combination also can
 ```
 
 
----
-
-## contain duplicate digit:
+### contain duplicate digit
 
 
 ```python
@@ -4648,9 +4029,7 @@ for i in range(minimum,maximum):
 13. write a python program, to print the numbers for the given range, 
 
 
----
-
-## where number must contain digits in the increasing order:
+### where number must contain digits in the increasing order
 
 
 start: 120 
@@ -4681,9 +4060,7 @@ while start<=end:
 ```
 
 
----
-
-## 14. write a python program to find the factorial of the given number:
+### write a python program to find the factorial of the given number
 
 
 0! ===> 1 
@@ -4709,9 +4086,7 @@ else:
 ```
 
 
----
-
-## 15. check the given number is Armstrong number or not:
+### check the given number is Armstrong number or not
 
 
 ```python
@@ -4733,9 +4108,7 @@ else:
 ```
 
 
----
-
-## 16. check the given number is "Strong number" or not:
+### check the given number is "Strong number" or not
 
 
 145 ===> 1!+4!+5! ===> 1+24+120===>145 
@@ -4759,9 +4132,7 @@ else:print("Not Strong!")
 ```
 
 
----
-
-## 17.find the gcd or hcf of the given two numbers:
+### 17.find the gcd or hcf of the given two numbers
 
 
 num1: 12 
@@ -4785,9 +4156,7 @@ while fact!=0:
 ```
 
 
----
-
-## 18. find the lcm of the given two numbers:
+### find the lcm of the given two numbers
 
 
 ```python
@@ -4805,9 +4174,7 @@ while fact!=0:
 ```
 
 
----
-
-## where the duplicate digits are not allowed:
+### where the duplicate digits are not allowed
 
 
 num1: 123 
@@ -4830,9 +4197,7 @@ print(res)
 20. write a python program to print the highest common digit in the  
 
 
----
-
-## given two numbers:
+### given two numbers
 
 
 num1: 123 
@@ -4857,9 +4222,7 @@ print(maximum)
 21. write a python program to check the given digit is present or not 
 
 
----
-
-## in the given number:
+### in the given number
 
 
 number: 1234 
@@ -4884,9 +4247,7 @@ else:print("not found")
 ```
 
 
----
-
-## 23. print the prime numbers for the given range:
+### print the prime numbers for the given range
 
 
 start: 1 
@@ -4908,11 +4269,6 @@ for num in range(start,end+1):
     if count==2: 
         print(num)
 ```
-
-
----
-
-## programs on patterns:
 
 
 1. 
@@ -5774,17 +5130,10 @@ for rownum in range(1,rows+1):
 
 ---
 
-## 9)  Python un-conditional statements:
+## Unconditional Statements (break / continue / pass)
 
 
----
-
-## in python, we will have the following un-conditional statements:
-
-
----
-
-## 1)  break :
+### break
 
 
 break statement is used to "stop the loop execution" 
@@ -5932,9 +5281,7 @@ print(count)
 ```
 
 
----
-
-## 2) continue
+### continue
 
 
 continue is also used only in  "looping statement" 
@@ -5980,9 +5327,7 @@ while a<=10:
 ```
 
 
----
-
-## 3)  pass
+### pass
 
 
 in python, pass is used to "to specify the no code", when we are 
@@ -6197,17 +5542,12 @@ we will use the following methods with print() function:
 
 ---
 
-## 1) format specifiers:
+## Output Formatting
 
 
 like C or C++, python also uses format specifiers to "display the both 
 
 string and data" together 
-
-
----
-
-## in python, we will have the following format specifiers:
 
 
 1)  "%d" ===> for integer numbers 
@@ -6308,9 +5648,7 @@ print("the value of a is:%.5f"%(a))
 ```
 
 
----
-
-## 2) format() function:
+### format() Function
 
 
 when we want to print the "both text and data together" in python we
@@ -6360,12 +5698,7 @@ print("the value of a is:{r2} and b is:{r1}".format(r1=a,r2=b))
 
 ---
 
-## 11)  Python Data structures:
-
-
----
-
-## in python, we will have the following data structures:
+## Python Data Structures
 
 
 1)  list 
@@ -6385,12 +5718,7 @@ print("the value of a is:{r2} and b is:{r1}".format(r1=a,r2=b))
 
 ---
 
-## indexing and slicing in python:
-
-
----
-
-## in python, we can apply indexing and slicing on the following:
+## Indexing & Slicing
 
 
 1)  list 
@@ -6447,9 +5775,7 @@ when given slicing with wrong indexing, we will get always "empty
 sequence type" as result 
 
 
----
-
-## in Python, indexing will be two types:
+### in Python, indexing will be two types
 
 
 1)  positive indexing 
@@ -6603,9 +5929,7 @@ print(l1[10:0:-4])
 
 write a python program to swap the even index elements with odd index 
 
----
-
-## elements without using any built-in function for the given list:
+### elements without using any built-in function for the given list
 
 example: 
 [1,2,3,4,5,6] 
@@ -6630,9 +5954,7 @@ else:
 
 write a python program insert the given element into the list for given 
 
----
-
-## any position  without using any built-in function:
+### any position  without using any built-in function
 
 
 l1=[1,2,3,4,5,6,7,8] 
@@ -6651,9 +5973,7 @@ print(l1)
 
 write a python program delete the element from the list for given 
 
----
-
-## any position  without using any built-in function:
+### any position  without using any built-in function
 
 
 l1=[1,2,3,4,5,6,7,8] 
@@ -6665,18 +5985,15 @@ l1=[1,2,3,4,5,6,7,8]
 pos=int(input("position:"))#3
 l1=l1[:pos-1]+l1[pos:]
 print(l1)
-```
 
 leet code-1:
-
----
-
-## move the all zeros to the end of the given array or list:
-
+move the all zeros to the end of the given array or list:
+==========================================
 
 l1=[1,2,3,0,4,5,0,6] 
 
 result: [1,2,3,4,5,6,0,0]
+```
 
 code:
 l1=[1,2,3,0,4,5,0,6] 
@@ -6691,9 +6008,7 @@ print(result+[0]*count)
 leet code-2: 
 
 
----
-
-## rotate the array or list for k number of times towards right :
+### rotate the array or list for k number of times towards right
 
 l1=[1,2,3,4,5,6] 
 
@@ -6709,9 +6024,7 @@ leet code-3
 ```
 
 
----
-
-## rotate the array or list for k number of times towards left :
+### rotate the array or list for k number of times towards left
 
 l1=[1,2,3,4,5,6] 
 
@@ -6773,9 +6086,7 @@ print(max2)
 ```
 
 
----
-
-## write a python program to find the highest frequency of the given element:
+### write a python program to find the highest frequency of the given element
 
 l1=[1,2,3,4,5,2,3,4,3,4,3,3] 
 output:  3 
@@ -6798,12 +6109,12 @@ for i in d1:
     if freq<d1[i]: 
         freq=d1[i]
 #make the list with elements with maximum freq.
-```
 
 for i in d1:
     if freq==d1[i]:
         ele+=[i]
 print(ele)
+```
 
 write a python program to print the string in following format for  given 
 input string:
@@ -6867,9 +6178,7 @@ if not flag:
 ```
 
 
----
-
-## write a python program to print the words of the given string as a list:
+### write a python program to print the words of the given string as a list
 
 input:  i am not learning python 
 output: ["i","am","not","learning","python"] 
@@ -6924,9 +6233,7 @@ for i in s1:
 
 write a python program substitute the vowel with next alphabet in the 
 
----
-
-## given string:
+**given string**
 
 input: abcde 
 output: bbcdf 
@@ -6995,9 +6302,7 @@ else:
     print("k never be negative")
 
 
----
-
-## write a python program to print the all sub arrays of the given size k :
+### write a python program to print the all sub arrays of the given size k
 
 
 input: [1,2,3,4,5] 
@@ -7021,9 +6326,7 @@ while start<length:
 ```
 
 
----
-
-## write a python program print the all substrings of the given string:
+### write a python program print the all substrings of the given string
 
 input:  abcd 
 a,b,c,d,ab,bc,cd,abc,bcd,abcd
@@ -7069,12 +6372,10 @@ else:
 
 ---
 
-## Searching and Sorting in Python:
+## Searching & Sorting
 
 
----
-
-## Linear search:
+### Linear Search
 
 
 linear search is nothing but "searching the given element or key or value 
@@ -7095,9 +6396,7 @@ else:
 ```
 
 
----
-
-## Binary Search:
+### Binary Search
 
 binary search is a perform on "sorted array or list" 
 when we want to perform the "binary search" , we will always need to sort 
@@ -7135,9 +6434,7 @@ else:
 ```
 
 
----
-
-## Bubble sort:
+### Bubble Sort
 
 l1=[4,5,6,-2,-1,-3]
 #length of the array 
@@ -7151,9 +6448,7 @@ print(l1)
 
 write a python program arrange the all alphabets of the given string in 
 
----
-
-## the alphabetical order and print the result as a string:
+### the alphabetical order and print the result as a string
 
     input:  dfgabc 
     output: abcdfg
@@ -7222,9 +6517,7 @@ for i in range(length):
             l1[i],l1[j]=l1[j],l1[i]
 print(l1)
 
----
-
-## insertion sort:
+### Insertion Sort
 
 
 ```python
@@ -7243,9 +6536,7 @@ print(l1)
 ```
 
 
----
-
-## selection sort:
+### Selection Sort
 
 
 ```python
@@ -7266,7 +6557,7 @@ print(l1)
 
 ---
 
-## list comprehension:
+## List Comprehension
 
 in python, we can able to create the list using another list or iterable using 
 list comprehension 
@@ -7292,7 +6583,7 @@ print([d1[i] for i in {1:2,3:4,5:6}])
 
 ---
 
-## set comprehension:
+## Set Comprehension
 
 in python, we can able to create the set using another set or iterable using 
 set comprehension 
@@ -7308,7 +6599,7 @@ print({i for i in range(1,10) if i==5})
 
 ---
 
-## dictionary comprehension:
+## Dictionary Comprehension
 
 in python, we can able to create the dictionary using another dictionary or iterable using dictionary comprehension 
 syntax: 
@@ -7325,12 +6616,10 @@ print({i:i**2 for i in range(1,11) if i==5})
 
 ---
 
-## working with list:
+## Working with Lists
 
 
----
-
-## on list we can able to apply the following built-in functions:
+### on list we can able to apply the following built-in functions
 
 1.max() 
  using this function we can able to get the maximum element in the given
@@ -7369,7 +6658,7 @@ print(list(reversed(l1)))
 
 ---
 
-## working with list class functions:
+## List Class Methods
 
 in python, list is built-in class 
 when we create the list with some name, the name is referred as "object 
@@ -7387,9 +6676,7 @@ l1=[]
 print(dir(l1))
 
 
----
-
-## in list class, we will have the following functions or methods:
+### in list class, we will have the following functions or methods
 
 1) append() 
 this function is used to add the element to the list at the end 
@@ -7587,9 +6874,7 @@ else:
     print(l1)
 
 
----
-
-## write a python program to make the dynamic list for given size, where it allow only even and positive integers:
+### write a python program to make the dynamic list for given size, where it allow only even and positive integers
 
   input:  5 
   output: [2,100,4,8,10] 
@@ -7636,9 +6921,7 @@ if the given value is not found in the given list, then index() function will
 always gives "IndexError"    
 
 
----
-
-## flatten the list:
+### flatten the list
 
 flatten list means "make the list with out any nested list" 
 
@@ -7692,9 +6975,7 @@ print((*reversed(t1),))
 ```
 
 
----
-
-## working with  tuple class functions:
+### working with  tuple class functions
 
 in python, tule is built-in class 
 when we create the tuple with some name, the name is referred as "object 
@@ -7709,11 +6990,6 @@ example:
 print(dir(tuple))
 t1=()
 print(dir(t1))
-
-
----
-
-## in python, we will have only two function from the tuple class:
 
 1) index() ==> to get the index of the given element from the tuple
 2) count()==> to get the given element is present how many times in 
@@ -7738,11 +7014,6 @@ print(t3)
 t4='a','b','c'
 print(t4)
 ```
-
-
----
-
-## while working with lists and tuples, we need to remember the following:
 
 1) we can able to combine the two lists or tuple using "+" operator
 2)  we can able to repeat the data of the list or tuple by multiplying with
@@ -7772,12 +7043,10 @@ print(t1*3)
 
 ---
 
-## working with strings:
+## Working with Strings
 
 
----
-
-## on string we can able to apply the following built-in functions:
+### on string we can able to apply the following built-in functions
 
 1.max() 
  using this function we can able to get the maximum character in the given
@@ -7813,9 +7082,7 @@ on string, we can able to apply the following functions of string class called "
 ```
 
 
----
-
-## type conversion functions of the string class called "str"
+### type conversion functions of the string class called "str"
 
 1)  lower()  ===> this function will convert  the given string characters 
 into lower case 
@@ -7847,11 +7114,6 @@ print(s1.title())
 s1="hello world"
 print(s1.capitalize())
 ```
-
-
----
-
-## when we want to given string lower case or upper case or not, in python we will use the following functions:
 
 1)isupper() 
 
@@ -7968,14 +7230,10 @@ print(s1.isidentifier())
 ```
 
 
----
-
-## the other string class (str) functions of the python are:
+### the other string class (str) functions of the python are
 
 
----
-
-## 1) count() :
+**1) count() **
 
 using this function, we can able to find the given string is repeated how 
 many times in the complete string 
@@ -7990,9 +7248,7 @@ print(s1.count("r"))#1
 ```
 
 
----
-
-## 2) index():
+**2) index()**
 
 using this function, we can able to find the given string index in the whole
 string, if the given string is not found, this function will raise an error 
@@ -8005,9 +7261,7 @@ print(s1.index(""))
 ```
 
 
----
-
-## 3) lstrip():
+**3) lstrip()**
 
 lstrip() is used to remove the all spaces of the string from beginning or 
 any given string from the starting of the string, if given string present 
@@ -8081,11 +7335,6 @@ print(s1.rstrip("orldw "))
 print(s1.rstrip("orldw e"))
 ```
 
-
----
-
-## strip():
-
 strip() means " lstrip()+ rstrip()" 
 
 strip() is used to remove the all spaces of the string from  ending or starting of the  any given string, if string  contains spaces at starting or at ending or at both , then strip() function will remove  spaces  
@@ -8122,9 +7371,7 @@ print(s1.strip("hdelwr o"))
 ```
 
 
----
-
-## 6) replace() :
+**6) replace() **
 
 
 using this function we can able to replace the given string in the whole
@@ -8150,9 +7397,7 @@ print(s1.replace("l","L",30000))
 ```
 
 
----
-
-## 7) join() :
+**7) join() **
 
 join() function is used to add the given character or symbol between the 
 characters of the given string 
@@ -8180,18 +7425,14 @@ print("-".join(s1))#2-1-4-3
 
   
 
----
-
-## 8) format()
+**8) format()**
 
 
 format() function is used to display the output of the given data and text 
 , mostly this is used for output formatting 
 
 
----
-
-## 9) split()
+**9) split()**
 
 using this function we can able to split the given string into list of string 
       
@@ -8229,9 +7470,7 @@ print(s1.split("l"))
 ```
 
 
----
-
-## 10. startswith():
+**10. startswith()**
 
 in python, when we want to check the given string is starting or not, in 
 python we will use this function 
@@ -8246,9 +7485,7 @@ print(s1.startswith("world"))
 ```
 
 
----
-
-## 11.endswith():
+**11.endswith()**
 
 in python, when we want to check the given string is ending or not, in 
 python we will use this function 
@@ -8265,9 +7502,7 @@ print(s1.endswith(""))
 ```
 
 
----
-
-## 12. find():
+**12. find()**
 
 using this function, we can able to find the given string present or not in 
 the entire string 
@@ -8344,12 +7579,10 @@ print("anagram") if d1==d2 else print("not anagram")
 
 ---
 
-## working with sets:
+## Working with Sets
 
 
----
-
-## on sets, we can able to apply the following functions:
+### on sets, we can able to apply the following functions
 
 1. max()
      this function will give the " maximum element of the set "
@@ -8378,9 +7611,7 @@ print(len(s1))
 
 in python, set class name is "set" 
 
----
-
-## in "set" class , we will have the following functions:
+### in "set" class , we will have the following functions
 
 1) add() 
 when we want to add the any new element into the set, we will use this 
@@ -8423,9 +7654,7 @@ print(s1)
 ```
 
 
----
-
-## 5) union():
+**5) union()**
 
 using this function we can able to get the "Combined set as result of multiple sets, union means combine the multiple sets into single set, where it will not consider the duplicate elements while union operation"
 
@@ -8440,9 +7669,7 @@ print(s1.union(s2))
 ```
 
 
----
-
-## 6) intersection() :
+**6) intersection() **
 
 intersection means "getting the common elements or data from the given 
 two sets"
@@ -8472,9 +7699,7 @@ print(s1)
 ```
 
 
----
-
-## 8) difference():
+**8) difference()**
 
 difference means "getting the  elements of only set  and eliminate which are common in both" 
 when we want to perform difference of the given two sets, in python 
@@ -8490,9 +7715,7 @@ print(s1-s2)
 ```
 
 
----
-
-## 9)difference_update():
+**9)difference_update()**
 
 using this function also , we can able perform the "difference of the given two sets" and make the result as "result any one of the set", based 
 on the given  order
@@ -8528,9 +7751,7 @@ print(s1.symmetric_difference(s2))
 ```
 
 
----
-
-## 11) symmetric_difference_update():
+**11) symmetric_difference_update()**
 
 
 when we want to perform the symmetric difference of the given two sets 
@@ -8596,9 +7817,7 @@ print(a.isdisjoint(c))
 ```
 
 
----
-
-## 15) update():
+**15) update()**
 
 using this function, we can able to add the new elements into sets 
 when we are using this function, the data always we need to take as 
@@ -8618,9 +7837,7 @@ print(a)
 ```
 
 
----
-
-## 16)clear()
+**16)clear()**
 
 using this function we can able to remove the all elements from the set 
 
@@ -8631,9 +7848,7 @@ print(a)
 ```
 
 
----
-
-## 17.copy():
+**17.copy()**
 
 using this function, we can able to copy the list data into another list 
 
@@ -8666,11 +7881,6 @@ print(a^b)
 print(a-b)
 ```
 
-
----
-
-## when the set is "frozen set", we can able to apply the following operations:
-
 1) union 
 2) intersection 
 3) difference
@@ -8679,12 +7889,10 @@ print(a-b)
 
 ---
 
-## working with dictionary:
+## Working with Dictionary
 
 
----
-
-## on dictionary , we can able to apply the following built-in functions:
+### on dictionary , we can able to apply the following built-in functions
 
 1) max()
        this function will return  "maximum key" as a value 
@@ -8722,18 +7930,14 @@ in python,
 dictionary is mutable  and dictionary is "non-sequence type" 
 dictionary is "ordered collection" 
 
----
-
-## on python dictionary, we can able to apply the following operations:
+### on python dictionary, we can able to apply the following operations
 
 1) insert 
 2) update
 3) delete 
 4) search 
 
----
-
-## 1) insert:
+**1) insert**
 
 when we want to insert the data into dictionary , we will use  key 
 if the given key is present in the dictionary , then it become update operation 
@@ -8752,9 +7956,7 @@ print(d1)
 ```
 
 
----
-
-## 2.update:
+**2.update**
 
 when we want to update the data in dictionary , we will use  key 
 if the given key is present in the dictionary , then it become update operation 
@@ -8772,9 +7974,7 @@ print(d1)
 ```
 
 
----
-
-## 3.delete operations:
+**3.delete operations**
 
 when we want to delete the data from the dictionary, we will use the key 
 syntax: 
@@ -8798,9 +7998,7 @@ print(d1)
 
 when we want to delete the data from the dictionary, we will use the 
 
----
-
-## following functions:
+**following functions**
 
 
 1) pop() 
@@ -8904,11 +8102,11 @@ print(d1)
 in dictionary , we will have a function called "setdefault()" 
 when we given any key and value with setdefault() function , setdefault() 
 check first given key is there or not, if given key is present, then it will return given key value as result.
-```
 
 if the given key is not present, then it will insert the given key and value into dictionary and return the value as result , while using setdefault(), we given only key with out value.
 
 if key is not present in the dictionary , then setdefault() will insert the key with "None" as value, return "None" as result 
+```
 
 
 ```python
@@ -8921,7 +8119,7 @@ print(d1)
 
 ---
 
-## 12)  Python Functions:
+## Python Functions
 
 function is a "collection or a block of statements", which is used to perform  a specified task  in the program
 
@@ -8935,11 +8133,6 @@ in python, when we make any code as function , then the functions can be
 re-used inside the another python, when we make the any code as a function, then functions can able export to another python file using a 
 concept called "module" 
  
-
----
-
-## in Python, we will have two types of functions:
-
 1) built-in function 
 the functions which are given python
 example: int(), str(), print(), input(), list(), tuple(),max(),min()
@@ -8947,9 +8140,7 @@ example: int(), str(), print(), input(), list(), tuple(),max(),min()
 2) user-defined function or custom function
 any function which is created by programmer or developer in python, then the function is called as "user-defined" function
 
----
-
-## in python, we can able to create the user-defined functions in the following ways:
+### in python, we can able to create the user-defined functions in the following ways
 
 1) using "def" keyword 
    any function we create using "def", then the function is called as "   
@@ -8973,9 +8164,7 @@ arguments are "data", which are act like a input to the functions
 when we give the arguments while creating the function , the arguments of the function can get via "function calling" 
 
 
----
-
-## what is mean by function calling:
+### what is mean by function calling
 
 function calling means "Executing the function" , because when we create 
 the function , the function will not execute when we run the program , the
@@ -9001,14 +8190,10 @@ display()
 ```
 
 
----
-
-## in python, we can able to create the function in the following ways:
+### in python, we can able to create the function in the following ways
 
 
----
-
-## 1) function without arguments and without return type:
+### function without arguments and without return type
 
 in this model, function will not create with any arguments and after the 
 function execution , function will not return any result 
@@ -9033,9 +8218,7 @@ square(a)
 ```
 
 
----
-
-## 3) function with arguments and with return type
+### function with arguments and with return type
 
 in this function will take arguments and after the function execution ,
 function will return result 
@@ -9120,9 +8303,7 @@ print(print(print(print("10"))))
 ```
 
 
----
-
-## 4) function without arguments and with return type
+### function without arguments and with return type
 
 in this model, function will not take any arguments and function will return 
 result after the execution 
@@ -9142,14 +8323,10 @@ in python, we will different types of arguments
 
 when we are working with functions in python, the functions in python 
 
----
-
-## will take the following types of arguments:
+### will take the following types of arguments
 
 
----
-
-## 1) positional arguments:
+### positional arguments
 
 when we say any argument in the python function is "positional argument", the arguments will take the values from the function calling 
 based on the position 
@@ -9168,9 +8345,7 @@ otherwise we will get an error called "TypeError"
 ```
 
 
----
-
-## 2) keyword arguments:
+### keyword arguments
 
 
 when we want to give the values to the function arguments from the 
@@ -9195,9 +8370,7 @@ display(c=1000, b=1000,a=1000)
 ```
 
 
----
-
-## 3) default arguments:
+### default arguments
 
 when we are defining the arguments in the function , we will define the 
 argument with some default value, this default value will take the argument  when we are not given any value while calling the function , 
@@ -9225,9 +8398,7 @@ display(a,b,c)
 ```
 
 
----
-
-## 4) variable length arguments:
+### variable length arguments
 
 in general, the maximum number of arguments we can give from the 
 function calling  is always equal to "the maximum number of arguments
@@ -9238,14 +8409,10 @@ for any one argument, in python we need to make the argument as variable length 
 any  number of values from the function calling
 in python we can make the argument as variable length argument using 
 
----
-
-## following ways:
+**following ways**
 
 
----
-
-## 1) arbitrary arguments (*args)
+### arbitrary arguments (*args)
 
 
 when the argument is arbitrary argument, then function can receive any 
@@ -9289,9 +8456,7 @@ display(101,201,301,401,501,1000)
 ```
 
 
----
-
-## 2) keyword arbitrary arguments(**kwargs)
+### keyword arbitrary arguments(**kwargs)
 
 
 it is same as  "Arbitrary argument" 
@@ -9338,9 +8503,7 @@ display(10,20,30,a=100,b=220)
 ```
 
 
----
-
-## 5) position-only arguments :
+### position-only arguments 
 
 
 when we are defining the arguments inside the function , we specify 
@@ -9357,9 +8520,7 @@ display(10,20,30,d=40,f=60,e=50)
 ```
 
 
----
-
-## 6) keyword only arguments
+### keyword only arguments
 
 
 when we are defining the arguments inside the function , we specify 
@@ -9377,9 +8538,7 @@ display(10,20,30,d=40,f=60,e=50)
 ```
 
 
----
-
-## rules to give the arguments in the function or function calling:
+### rules to give the arguments in the function or function calling
 
 
 1) when we have positional arguments and default arguments in the 
@@ -9445,9 +8604,7 @@ print(result())
 ```
 
 
----
-
-## inner functions or nested functions or closures
+### Inner / Nested Functions & Closures
 
 
 in python, we can able to create the a function inside the another function 
@@ -9606,9 +8763,7 @@ print(result)
 ```
 
 
----
-
-## recursion with python:
+### Recursion
 
 recursion means  implementing the "recurrence relation" 
 if we say any relation is  "Recurrence", then relation can used recursively 
@@ -9630,31 +8785,27 @@ when we are working with recursive function , we will never use any looping stat
 
 ---
 
-# programs with recursion:
+## Recursion Programs
 
 
----
+### print the numbers 1 to n using recursion
 
-## 1) print the numbers 1 to n using recursion:
-```
 n=10 
+
 1 2 3 4 5 6 7 8 10 
-```
+
 code: 
-```python
- def display(start,n):
+def display(start,n):
     if start<=n:
         print(start)
         display(start+1,n)
 n=int(input("n:"))
 display(1,n)
-```
 
-## 2. print the remove the all vowels of the string using recursion 
-```
+2. print the remove the all vowels of the string using recursion 
 input: abcder 
 output:  bcdr 
-```
+
 ```python
 def vowels_remove(index,length):
     if index<length: 
@@ -9668,9 +8819,7 @@ vowels_remove(0,length)
 ```
 
 
----
-
-## 3. print the maximum digit of the given number:
+### print the maximum digit of the given number
 
 
 ```python
@@ -9686,8 +8835,7 @@ num=int(input("number:"))
 maximum_digit(0,num)#num=123
 ```
 
-## 4. program to combine the two lists into single list without duplicates using recursion, without any built-in function:
-```python
+4. program to combine the two lists into single list without duplicates 
 l1=[1,2,3,4,5] 
 l2=[3,4,5,6,7,8] 
 result=[1,2,3,4,5,6,7,8] 
@@ -9706,9 +8854,9 @@ length1=length2=0
 for _ in l1:length1+=1 
 for _ in l2:length2+=1
 merge_list(0,length2+length1,l1+l2,[])
-```
 
-## 5. write a python program to find the  common maximum element of the given two lists using recursion  without using any built-in function:
+
+### write a python program to find the  common maximum element of the given two lists using recursion  without using any built-in function
 
 
 ```python
@@ -9732,15 +8880,12 @@ maximum=maximum[0]
 maximum_element(0,length2+length1,l1+l2,maximum)
 ```
 
-## 6. write a python program to print the following pattern without loops, with using recursion, without any built-in function:
-
-```
+6. write a python program to print the following pattern without loops, 
 1
 1 2
 1 2 3 
 1 2 3 4
-1 2 3 4 5
- ```
+1 2 3 4 5 
 
 ```python
 def pattern(rownum,rows):
@@ -9755,19 +8900,17 @@ def pattern(rownum,rows):
 
 rows=int(input("Rows:"))
 pattern(1,rows)
-```
 
-## 7.write a python program to print the following pattern without loops, with using recursion, without any built-in function:
-```
+7.write a python program to print the following pattern without loops, 
+with using recursion, without any built-in function:
+=========================================================
 1 2 3 4 5
 1 2 3 4
 1 2 3 
 1 2
 1
-```
 code:
 =====
-```python
 def pattern(rownum,rows):
     def row(colnum,data,cpr):
         if colnum<=cpr: 
@@ -9782,14 +8925,12 @@ rows=int(input("Rows:"))
 pattern(1,rows)
 ```
 
-## 8. write a python program to print the following pattern without loops, with using recursion, without any built-in function:
-```
+8. write a python program to print the following pattern without loops, 
 *
 * *
 * * *
 * * * * 
 * * * * *
-```
 
 ```python
 def pattern(rownum,rows):
@@ -9802,7 +8943,7 @@ pattern(1,rows)
 ```
 
 
-## 9. find the factorial of the given number using recursion:
+### find the factorial of the given number using recursion
 
 
 ```python
@@ -9814,10 +8955,10 @@ num=int(input("num:"))
 print(factorial(num))
 ```
 
-## 10.  print the fibnocii series for the given n, where n refers number of fibnocii values need to print in the result using recursion, without using looping statements:#
-```n=10 
+10.  print the fibnocii series for the given n, where n refers number of fibnocii values need to print in the result using recursion, without using looping statements:
+n=10 
 0 1 1 2 3 5 8 13 21 34
-```
+
 ```python
 def fibnocii(a,b,n):
     #a=5,b=8,n=0
@@ -9829,11 +8970,10 @@ n=int(input("n:"))#5
 fibnocii(0, 1, n)
 ```
 
-## 11. print  the prime numbers for the given range using recursion, without using built-in functions and looping statements:
-``start:1 
+11. print  the prime numbers for the given range using recursion, without 
+start:1 
 end: 20 
 2 3 5 7 11 13 17 19
-``
 
 
 ```python
@@ -9854,226 +8994,22 @@ start=int(input("start:"))
 end=int(input("end:"))
 prime(start,end)
 ```
-## 12. Decimal to Binary using Recursion
-```
-**Input:** `120`
-**Output:** `1111000`
-```
 
-```python
-number = int(input("number:"))
-
-def decimal_to_binary(num, res):
-    if num != 0:
-        res = res + f'{num % 2}'
-        num //= 2
-        decimal_to_binary(num, res)
-    else:
-        print(res[::-1])
-
-decimal_to_binary(number, '')
-```
-
-## 13. Number to Words using Recursion
-```
-**Input:** `1234` → **Output:** `One Two Three Four`
-**Input:** `-100` → **Output:** `One Zero Zero`
-```
-```python
-number = int(input("number:"))
-
-words = ["zero", "one", "two", "three", "four",
-         "five", "six", "seven", "eight", "nine"]
-
-def number_to_text(num, res):
-    if num != 0:
-        res = words[num % 10] + " " + res
-        number_to_text(num // 10, res)
-    else:
-        print(res)
-
-number_to_text(number, '')
-```
-
----
-
-## 14. 2nd Maximum Digit using Recursion
-
-**Input:** `128993` → **Output:** `8`
-
-```python
-number = int(input("number:"))
-
-def second_maximum(num, first_max, second_max):
-    if num != 0:
-        if first_max < num % 10:
-            second_max = first_max
-            first_max = num % 10
-        elif second_max < num % 10 and num % 10 < first_max:
-            second_max = num % 10
-        second_maximum(num // 10, first_max, second_max)
-    else:
-        if second_max != 0:
-            print(second_max)
-        else:
-            if {*f'{number}'} == {*f'{number % 10}'}:
-                print(number % 10)
-            else:
-                print(0)
-
-second_maximum(number, 0, 1)
-```
-
----
-
-## 15. Print Words of a String using Recursion
-
-**Input:** `"am i learning python really"`
-**Output:**
-```
-am
-i
-learning
-python
-really
-```
-
-```python
-def words(str1, res):
-    if str1 != '':
-        char = str1[0]
-        if char != " ":
-            words(str1[1:], res + char)
-        elif char == " " and res == '':
-            words(str1[1:], '')
-        else:
-            print(res)
-            words(str1[1:], '')
-    else:
-        print(res)
-
-string = input("string:")
-words(string, '')
-```
-
----
-
-## 17. Sort Characters of a String using Recursion
-
-**Input:** `dabc` → **Output:** `abcd`
-**Input:** `a1dcb` → **Output:** `1abcd`
-
-```python
-upper  = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-lower  = "abcdefghijklmnopqrstuvwxyz"
-digits = "0123456789"
-
-def sort_characters(str1):
-    if str1 != '':
-        if str1[0] in string:
-            print(str1[0], end="")
-        sort_characters(str1[1:])
-
-string = input("string:")
-sort_characters(upper + lower + digits)
-```
-
----
-
-## Enhancing Functions Without Changing Code
-
-in python, when we create a function, we can enhance the function code
-without changing it directly. Two ways to do this:
-
-1. Monkey Patching
-2. Decorators
 
 ---
 
 ## Monkey Patching
 
-when we want to change any function code without changing the function
-code directly, in python we use **monkey patching**.
-
-in monkey patching, we can change the function code like how we change
-the value of a variable — the original function code is **completely replaced**.
-
-**Syntax:**
-```python
-function_name = new_function_name
-```
-
-```python
-def display():
-    print("this is display function")
-
-def add(a, b):
-    print(a)
-    print(b)
-    print(f"add:{a + b}")
-
-def sub(a, b):
-    print(a)
-    print(b)
-    print(f"sub:{a - b}")
-
-display()
-
-# monkey patching
-display = add
-display(10, 20)
-
-# monkey patching
-display = sub
-display(10, 20)
-```
 
 ---
 
 ## Decorators
 
-decorator is a **higher order function**, which takes another function as
-argument, enhances it, and returns the enhanced function — original function
-code always remains **unchanged**.
 
-```
-function ══════(as argument)══════> decorator ══════> enhanced function
-```
+### iterators and generators
 
-if any function is a **higher order function**, it always takes another
-function as argument.
 
-### Terminology
+13)  Python modules and packages 
 
-1. **Wrapped function** — the function given as argument to the decorator for enhancement
-2. **Wrapper function** — the inner function inside the decorator used to enhance the wrapped function
 
-```
-wrapped function ==> decorator(wrapper) ==> enhanced function as result
-```
-
-### Steps to Create a Decorator
-
-**Step 1:** Create the wrapped function with some name
-
-**Step 2:** Create the decorator with some name
-
-**Step 3:** Create the wrapper function inside the decorator as inner function
-
-**Step 4:** Return the wrapper as result of the decorator
-
-### Applying a Decorator using `@` Symbol
-
-**Syntax:**
-```python
-@decorator_name
-def wrapped_function_name(arg1, arg2, arg3, ...argn):
-    # write the logic here
-```
-
-### Chain of Decorators
-
-for one function (wrapped function), we can give **any number of decorators**.
-
-when two or more decorators are given at a time, it is called **"chain of decorators"** — all decorators are called **from bottom to top** order by the wrapped function.
-
+**AI/ML**
