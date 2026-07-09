@@ -8787,212 +8787,121 @@ when we are working with recursive function , we will never use any looping stat
 
 ## Recursion Programs
 
+### Q12 — Decimal to Binary
 
-### print the numbers 1 to n using recursion
-
-n=10 
-
-1 2 3 4 5 6 7 8 10 
-
-code: 
-def display(start,n):
-    if start<=n:
-        print(start)
-        display(start+1,n)
-n=int(input("n:"))
-display(1,n)
-
-2. print the remove the all vowels of the string using recursion 
-input: abcder 
-output:  bcdr 
+**Input:** `120` → **Output:** `1111000`
 
 ```python
-def vowels_remove(index,length):
-    if index<length: 
-        if string[index] not in "aeiouAEIOU":
-            print(string[index],end="")
-        vowels_remove(index+1, length)
-string=input("String:")
-length=0 
-for _ in string:length+=1
-vowels_remove(0,length) 
-```
+number = int(input("number:"))
 
-
-### print the maximum digit of the given number
-
-
-```python
-def maximum_digit(maximum,num):
-    #maximum=3, num=0
-    if num!=0:
-        if maximum<num%10:
-            maximum=num%10  #maixmum=3
-        maximum_digit(maximum,num//10)
-    else: 
-        print(maximum)#3
-num=int(input("number:"))
-maximum_digit(0,num)#num=123
-```
-
-4. program to combine the two lists into single list without duplicates 
-l1=[1,2,3,4,5] 
-l2=[3,4,5,6,7,8] 
-result=[1,2,3,4,5,6,7,8] 
-code: 
-def merge_list(index,total,mylist,result): 
-    if index<total:
-        if mylist[index] not in result:
-            result+=[mylist[index]]
-        merge_list(index+1,total,mylist,result)
+def decimal_to_binary(num, res):
+    if num != 0:
+        res = res + f'{num % 2}'
+        num //= 2
+        decimal_to_binary(num, res)
     else:
-        print(result)
-        
-l1=[1,2,2,3,3,4,5] 
-l2=[3,4,5,6,7,8] 
-length1=length2=0
-for _ in l1:length1+=1 
-for _ in l2:length2+=1
-merge_list(0,length2+length1,l1+l2,[])
+        print(res[::-1])
 
+decimal_to_binary(number, '')
+```
 
-### write a python program to find the  common maximum element of the given two lists using recursion  without using any built-in function
+### Q13 — Number to Words
 
+**Input:** `1234` → **Output:** `One Two Three Four`
+**Input:** `-100` → **Output:** `One Zero Zero`
 
 ```python
-def maximum_element(index,total,mylist,result): 
-    #index=13, total=13,mylist=[1,2,2,3,3,4,5,3,4,5,6,7,8]
-    #result=8
-    if index<total:
-       if result<mylist[index]:
-           result=mylist[index]
-       maximum_element(index+1,total,mylist,result)
+number = int(input("number:"))
+
+words = ["zero", "one", "two", "three", "four",
+         "five", "six", "seven", "eight", "nine"]
+
+def number_to_text(num, res):
+    if num != 0:
+        res = words[num % 10] + " " + res
+        number_to_text(num // 10, res)
     else:
-        print(result)
+        print(res)
 
-l1=[1,2,2,3,3,4,5] 
-l2=[3,4,5,6,7,8] 
-length1=length2=0
-for _ in l1:length1+=1 
-for _ in l2:length2+=1
-maximum=l1+l2 
-maximum=maximum[0]
-maximum_element(0,length2+length1,l1+l2,maximum)
+number_to_text(number, '')
 ```
 
-6. write a python program to print the following pattern without loops, 
-1
-1 2
-1 2 3 
-1 2 3 4
-1 2 3 4 5 
+### Q14 — 2nd Maximum Digit
+
+**Input:** `128993` → **Output:** `8`
 
 ```python
-def pattern(rownum,rows):
-    def row(colnum,data,cpr):
-        if colnum<=cpr: 
-            print(data,end=" ")
-            row(colnum+1,data+1,cpr)
-    if rownum<=rows: 
-        row(1,1,rownum)
-        print()#new line
-        pattern(rownum+1, rows)
+number = int(input("number:"))
 
-rows=int(input("Rows:"))
-pattern(1,rows)
-
-7.write a python program to print the following pattern without loops, 
-with using recursion, without any built-in function:
-=========================================================
-1 2 3 4 5
-1 2 3 4
-1 2 3 
-1 2
-1
-code:
-=====
-def pattern(rownum,rows):
-    def row(colnum,data,cpr):
-        if colnum<=cpr: 
-            print(data,end=" ")
-            row(colnum+1,data+1,cpr)
-    if rownum<=rows: 
-        row(1,1,rows-rownum+1)
-        print()#new line
-        pattern(rownum+1, rows)
-
-rows=int(input("Rows:"))
-pattern(1,rows)
-```
-
-8. write a python program to print the following pattern without loops, 
-*
-* *
-* * *
-* * * * 
-* * * * *
-
-```python
-def pattern(rownum,rows):
-    if rownum<=rows: 
-        print("* "*rownum)#new line
-        pattern(rownum+1, rows)
-
-rows=int(input("Rows:"))
-pattern(1,rows)
-```
-
-
-### find the factorial of the given number using recursion
-
-
-```python
-def factorial(num):
-    if num==0 or num==1:
-        return 1 
-    return num*factorial(num-1)
-num=int(input("num:"))
-print(factorial(num))
-```
-
-10.  print the fibnocii series for the given n, where n refers number of fibnocii values need to print in the result using recursion, without using looping statements:
-n=10 
-0 1 1 2 3 5 8 13 21 34
-
-```python
-def fibnocii(a,b,n):
-    #a=5,b=8,n=0
-    if n!=0: 
-        print(a,end=" ")#0 1 1 2 3
-        a,b=b,a+b  
-        fibnocii(a, b, n-1)
-n=int(input("n:"))#5
-fibnocii(0, 1, n)
-```
-
-11. print  the prime numbers for the given range using recursion, without 
-start:1 
-end: 20 
-2 3 5 7 11 13 17 19
-
-
-```python
-def prime(start,end): 
-    def check_prime(num,fact,count): 
-        if fact<=num: 
-            if num%fact==0:
-                count+=1 
-            return check_prime(num,fact+1,count)
+def second_maximum(num, first_max, second_max):
+    if num != 0:
+        if first_max < num % 10:
+            second_max = first_max
+            first_max = num % 10
+        elif second_max < num % 10 and num % 10 < first_max:
+            second_max = num % 10
+        second_maximum(num // 10, first_max, second_max)
+    else:
+        if second_max != 0:
+            print(second_max)
         else:
-            return count
-    if start<=end: 
-        if check_prime(start,1,0)==2:
-            print(start,end=" ")
-        prime(start+1,end)
+            if {*f'{number}'} == {*f'{number % 10}'}:
+                print(number % 10)
+            else:
+                print(0)
 
-start=int(input("start:"))
-end=int(input("end:"))
-prime(start,end)
+second_maximum(number, 0, 1)
+```
+
+### Q15 — Print Words of a String
+
+**Input:** `"am i learning python really"`
+
+**Output:**
+```
+am
+i
+learning
+python
+really
+```
+
+```python
+def words(str1, res):
+    if str1 != '':
+        char = str1[0]
+        if char != " ":
+            words(str1[1:], res + char)
+        elif char == " " and res == '':
+            words(str1[1:], '')
+        else:
+            print(res)
+            words(str1[1:], '')
+    else:
+        print(res)
+
+string = input("string:")
+words(string, '')
+```
+
+### Q17 — Sort Characters of a String
+
+**Input:** `dabc` → **Output:** `abcd`
+**Input:** `a1dcb` → **Output:** `1abcd`
+
+```python
+upper  = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+lower  = "abcdefghijklmnopqrstuvwxyz"
+digits = "0123456789"
+
+def sort_characters(str1):
+    if str1 != '':
+        if str1[0] in string:
+            print(str1[0], end="")
+        sort_characters(str1[1:])
+
+string = input("string:")
+sort_characters(upper + lower + digits)
 ```
 
 
@@ -9000,10 +8909,95 @@ prime(start,end)
 
 ## Monkey Patching
 
+when we want to change any function code without changing the function code directly, in python we use **"monkey patching"**.
+
+in monkey patching, we can change the function code just like how we change the value of a variable. the original function code is **completely replaced** by the new function.
+
+### How to Perform Monkey Patching
+
+**Syntax:**
+
+```python
+function_name = new_function_name
+```
+
+when we apply monkey patching on any function, the complete code of that function changes — the original function code is replaced entirely by the new function.
+
+```python
+def display():
+    print("this is display function")
+
+def add(a, b):
+    print(a)
+    print(b)
+    print(f"add:{a + b}")
+
+def sub(a, b):
+    print(a)
+    print(b)
+    print(f"sub:{a - b}")
+
+display()
+
+# monkey patching
+display = add
+display(10, 20)
+
+# monkey patching
+display = sub
+display(10, 20)
+```
 
 ---
 
 ## Decorators
+
+a decorator is a **higher order function** which takes another function as argument, enhances it, and returns the enhanced function as a result. the original function code always remains **unchanged**.
+
+```
+function  ══(as argument)══>  decorator  ══>  enhanced function
+```
+
+if any function is a higher order function, it always takes another function as argument.
+
+### Terminology
+
+| Term | Meaning |
+|---|---|
+| **Wrapped function** | The function given as argument to the decorator for enhancement |
+| **Wrapper function** | The inner function inside the decorator that enhances the wrapped function |
+
+```
+wrapped function  ==>  decorator(wrapper)  ==>  enhanced function
+```
+
+### Steps to Create a Decorator
+
+**Step 1:** Create the wrapped function with some name
+
+**Step 2:** Create the decorator with some name
+
+**Step 3:** Create the wrapper function inside the decorator as inner function
+
+**Step 4:** Return the wrapper as result of the decorator
+
+### Applying a Decorator using `@` Symbol
+
+when we want to give a decorator to a function, we use the `@` symbol:
+
+```python
+@decorator_name
+def wrapped_function_name(arg1, arg2, arg3, ...argn):
+    # write the logic here
+```
+
+### Chain of Decorators
+
+for one function (wrapped function), we can give **any number of decorators**.
+
+when two or more decorators are given at a time to a function, it is called **"chain of decorators"**.
+
+when we give chain of decorators, all decorators are called **from bottom to top** order by the wrapped function.
 
 
 ### iterators and generators
